@@ -13,8 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Adam Davies' Homepage
-name: Adam Davies
+title: Adam Davies
+masthead_title: Adam Davies' Homepage
+title_separator: "|"
 email: adavies4@illinois.edu
 description: "Personal website of Adam Davies."
 # twitter_username: username
@@ -59,6 +60,7 @@ plugins:
 
 author:
   name      : "Adam Davies"
+  pronouns  : "he/they"
   avatar    : "/assets/images/me.jpg"
   bio       : "CS PhD student @ UIUC"
   email     : adavies4@illinois.edu
