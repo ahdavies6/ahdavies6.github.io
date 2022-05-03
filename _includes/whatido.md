@@ -8,8 +8,8 @@ Or are they just impressive [parrots](https://dl.acm.org/doi/10.1145/3442188.344
 
 Humans learn language through richly [multimodal, embodied interaction](https://doi.org/10.1016/j.cognition.2012.06.016) with the world and [other linguistic agents](https://doi.org/10.1111/j.1467-7687.2005.00445.x).
 Is this simply a contingent feature of human language acquisition, or a fundamental requirement for fully understanding language?
-What semantics can (and [cannot](https://aclanthology.org/2020.acl-main.463.pdf)) be learned from text alone?
-What about [grounded language models](https://aclanthology.org/2020.emnlp-main.703.pdf) -- do they "know" something about language that [cannot be learned from text alone](https://arxiv.org/pdf/2008.01766.pdf)?
+<!-- What semantics can be learned by text-only language models? -->
+Do [grounded language models](https://aclanthology.org/2020.emnlp-main.703.pdf) "know" something about language that [cannot be learned](https://aclanthology.org/2020.acl-main.463.pdf) [from text alone](https://arxiv.org/pdf/2008.01766.pdf)?
 
 My goal is to develop research approaches that can help us answer questions like these.
 In particular, I want to investigate whether there are elements of semantic representations learned by multimodal LMs (e.g. [CLIP](https://arxiv.org/pdf/2103.00020.pdf), [DALL-E](https://arxiv.org/pdf/2102.12092.pdf) ([2](https://arxiv.org/pdf/2204.06125.pdf)), [MERLOT](https://arxiv.org/pdf/2106.02636.pdf) ([Reserve](https://arxiv.org/pdf/2201.02639.pdf))) that are not acquired by text-only models.
