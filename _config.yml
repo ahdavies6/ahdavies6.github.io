@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Adam Davies
-# masthead_title: Adam Davies' Homepage
+masthead_title: ""
 title_separator: "|"
 email: adavies4@illinois.edu
 description: "Adam Davies, CS PhD student @ UIUC."
