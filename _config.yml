@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Adam Davies
-masthead_title: Adam Davies' Homepage
+# masthead_title: Adam Davies' Homepage
 title_separator: "|"
 email: adavies4@illinois.edu
 description: "Adam Davies, CS PhD student @ UIUC."
@@ -22,7 +22,7 @@ description: "Adam Davies, CS PhD student @ UIUC."
 github_username: ahdavies6
 linkedin_username: adamhdavies
 minimal_mistakes_skin: dark
-search: false
+# search: false
 
 # Build settings
 markdown: kramdown
