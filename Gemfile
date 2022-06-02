@@ -1,10 +1,9 @@
 source "https://rubygems.org"
 
-# todo: delete the two below if they don't fix it
 gem "jekyll"
 gem "webrick", "~> 1.7"
 
-gem "github-pages", group: :jekyll_plugins
+# gem "github-pages", group: :jekyll_plugins
 
 gem "tzinfo-data"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
@@ -19,6 +18,9 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
   gem "jekyll-remote-theme"
+  gem "jekyll-redirect-from"
+  gem "minimal-mistakes-jekyll"
+  gem "kramdown-parser-gfm"
 end
 
 # gem "webrick", "~> 1.7"
