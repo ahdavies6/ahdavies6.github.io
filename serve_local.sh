@@ -1,0 +1,1 @@
+bundle exec jekyll s --config "_config_local.yml"
