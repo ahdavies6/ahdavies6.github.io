@@ -7,23 +7,9 @@ Do they ["understand" the meanings of words, phrases, and sentences](https://acl
 Or are they just impressive [parrots](https://dl.acm.org/doi/10.1145/3442188.3445922)?
 
 Humans learn language through richly [multimodal, embodied interaction](https://doi.org/10.1016/j.cognition.2012.06.016) with the world and [other linguistic agents](https://doi.org/10.1111/j.1467-7687.2005.00445.x).
-Is this simply a contingent feature of human language acquisition, or a fundamental requirement for fully understanding language?
-<!-- What semantics can be learned by text-only language models? -->
-Do [grounded language models](https://aclanthology.org/2020.emnlp-main.703.pdf) "know" something about language that [cannot be learned](https://aclanthology.org/2020.acl-main.463.pdf) [from text alone](https://arxiv.org/pdf/2008.01766.pdf)?
+Is this simply a contingent feature of human language acquisition, or a fundamental requirement for fully understanding language? Do [grounded language models](https://aclanthology.org/2020.emnlp-main.703.pdf) "know" something about language that [cannot be learned](https://aclanthology.org/2020.acl-main.463.pdf) [from text alone](https://arxiv.org/pdf/2008.01766.pdf)?
 
 My goal is to develop research approaches that can help us answer questions like these.
-In particular, I want to investigate whether there are elements of semantic representations learned by multimodally grounded LMs (e.g. [CLIP](https://arxiv.org/pdf/2103.00020.pdf), [CoCa](https://arxiv.org/pdf/2205.01917.pdf), 
-<!-- [DALL-E](https://arxiv.org/pdf/2102.12092.pdf) ([2](https://arxiv.org/pdf/2204.06125.pdf)),  -->
-[MERLOT](https://arxiv.org/pdf/2106.02636.pdf) ([Reserve](https://arxiv.org/pdf/2201.02639.pdf)), etc.) that are not acquired by text-only models.
+In particular, I want to investigate whether there are elements of semantic representations learned by multimodally grounded LMs (e.g. [CLIP](https://arxiv.org/pdf/2103.00020.pdf), [CoCa](https://arxiv.org/pdf/2205.01917.pdf), [MERLOT](https://arxiv.org/pdf/2106.02636.pdf) ([Reserve](https://arxiv.org/pdf/2201.02639.pdf)), etc.) that are not acquired by text-only models.
 
-I am currently researching how [counterfactual methodologies](https://christophm.github.io/interpretable-ml-book/counterfactual.html#counterfactual) can be applied to [locate](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00359/98091/Amnesic-Probing-Behavioral-Explanation-with) and [manipulate](https://arxiv.org/pdf/2202.05262.pdf) semantic content acquired by such models,
-<!-- as compared to leading text-only LMs,  -->
-and test whether they have indeed captured elements of linguistic meaning that leading text-only models have not.
-
-<!-- text-only and multimodal language models, and determine whether multimodally grounded models have indeed captured elements of linguistic meaning that are not available to text-only models. -->
-
-<!-- that is [inaccessible to text-only models](https://aclanthology.org/2020.acl-main.463.pdf)?
-
-can be applied to analyze the representation and use of word meaning in text-only and multimodal neural LMs, and determine whether 
-
-Can we [locate](https://arxiv.org/pdf/2202.05262.pdf) semantic content acquired by grounded language models that is [inaccessible to text-only models](https://aclanthology.org/2020.acl-main.463.pdf)? -->
+I am currently researching how [counterfactual methodologies](https://christophm.github.io/interpretable-ml-book/counterfactual.html#counterfactual) can be applied to [locate](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00359/98091/Amnesic-Probing-Behavioral-Explanation-with) and [manipulate](https://arxiv.org/pdf/2202.05262.pdf) semantic content acquired by such models, and test whether they have indeed captured elements of linguistic meaning that leading text-only models have not.
