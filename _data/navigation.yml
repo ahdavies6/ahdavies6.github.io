@@ -5,9 +5,9 @@ main:
   #   url: /categories/
   # - title: "Tags"
   #   url: /tags/
-  - title: "Publications"
+  - title: "publications"
     url: /publications
-  - title: "Research Agenda"
+  - title: "research agenda"
     url: /research
-  - title: "About Me"
+  - title: "about me"
     url: /

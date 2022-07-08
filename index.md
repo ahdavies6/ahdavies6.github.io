@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About Me"
+title: "about me"
 layout: single
 author_profile: true
 ---
@@ -17,4 +17,4 @@ These are my [recent publications]({% link _pages/publications.md %}).
 
 I am a member of my advisor ChengXiang Zhai's [TIMAN research group](http://sifaka.cs.uiuc.edu/ir/index.html), and I work as a doctoral research assistant with the [NCSA](https://www.ncsa.illinois.edu/).
 
-I graduated *Cum Laude* from the University of Utah in Spring 2021 with a B.S. in both Computer Science and Cognitive Science, for which I was advised by Professors [Ellen Riloff](http://www.cs.utah.edu/~riloff/) and [Dustin Stokes](http://stokes.mentalpaint.net/Dustin_Stokes.html) (respectively).
+I graduated *cum laude* from the University of Utah in Spring 2021 with a B.S. in both Computer Science and Cognitive Science, for which I was advised by Professors [Ellen Riloff](http://www.cs.utah.edu/~riloff/) and [Dustin Stokes](http://stokes.mentalpaint.net/Dustin_Stokes.html) (respectively).

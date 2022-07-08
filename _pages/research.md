@@ -1,6 +1,6 @@
 ---
 permalink: /research.html
-title: "Research Agenda"
+title: "research agenda"
 layout: single
 author_profile: true
 ---
