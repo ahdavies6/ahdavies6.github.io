@@ -5,27 +5,6 @@ layout: single
 author_profile: true
 ---
 
-<!-- <style type="text/css">
-    h1 {
-        text-align: center;
-        margin-bottom: 1em;
-    }
-    .btn {
-        /* margin-bottom: 0em;
-        margin-top: 0em; */
-        /* margin-left: 0em;
-        margin-right: 0em; */
-        margin: 0em;
-        padding-top: 0.125em;
-        padding-bottom: 0.125em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-        border: 1px solid;
-        display: inline-block;
-        font-weight: normal;
-    }
-</style> -->
-
 {:file: .btn type="application/pdf"}
 
 Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & Zhai, C. (2022). Toward a Big Data Analysis System for Historical Newspaper Collections Research. _Proceedings of the Platform for Advanced Scientific Computing Conference_. [doi:10.1145/3539781.3539795](https://doi.org/10.1145/3539781.3539795)  

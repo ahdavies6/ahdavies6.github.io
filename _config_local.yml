@@ -69,24 +69,27 @@ author:
   pronouns  : "he/they"
   avatar    : "/assets/images/me.jpg"
   bio       : "CS PhD student @ UIUC"
+  uri       : "https://ahdavies6.github.io/"
   email     : adavies4@illinois.edu
-  location  : "Urbana, IL"
+  linkedin  : adamhdavies
+  github    : ahdavies6
+  # location  : "Urbana, IL"
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ahdavies6"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/adamhdavies/"
+    - label: "Scholar"
+      icon: "ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=vqkOH7gAAAAJ&hl=en"
+    - label: "ORCID"
+      icon: "ai ai-orcid"
+      url: "https://orcid.org/0000-0002-0610-2732"
 
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ahdavies6"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/adamhdavies/"
+# footer:
+#   links:
+#     - label: "GitHub"
+#       icon: "fab fa-fw fa-github"
+#       url: "https://github.com/ahdavies6"
+#     - label: "LinkedIn"
+#       icon: "fab fa-fw fa-linkedin"
+#       url: "https://www.linkedin.com/in/adamhdavies/"
 
 defaults:
   # _posts
