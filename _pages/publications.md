@@ -12,8 +12,8 @@ author_profile: true
 [preprint](https://arxiv.org/abs/2303.00333){: file}
 
 <div id="njpp"></div>
-Yuan, J., Pinto, F., <ins>**Davies, A.**</ins>, Gupta, A., & Torr, P. (2022). Not Just Pretty Pictures: Text-to-Image Generators Enable Interpretable Interventions for Robust Representations. *arXiv preprint arXiv:2212.11237.*    
-[preprint](https://arxiv.org/abs/2212.11237){: file}
+Yuan, J.\*, Pinto, F.\*, <ins>**Davies, A.**\*</ins>, & Torr, P. (2022). Not Just Pretty Pictures: Toward Interventional Data Augmentation Using Text-to-Image Generators. *arXiv preprint arXiv:2212.11237.*     
+[preprint](https://arxiv.org/abs/2212.11237){: file} [project page](https://torrvision.com/njpp/){: file}
 
 <div id="judel"></div>
 Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & Zhai, C. (2022). Toward a Big Data Analysis System for Historical Newspaper Collections Research. _Proceedings of the Platform for Advanced Scientific Computing Conference_. [doi:10.1145/3539781.3539795](https://doi.org/10.1145/3539781.3539795)  
