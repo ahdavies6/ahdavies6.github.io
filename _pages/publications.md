@@ -9,11 +9,13 @@ author_profile: true
 
 <div id="njpp"></div>
 Yuan, J.\*, Pinto, F.\*, <ins>**Davies, A.**\*</ins>, & Torr, P. (2024). Not Just Pretty Pictures: Toward Interventional Data Augmentation Using Text-to-Image Generators. *Forty-First International Conference on Machine Learning*.     
-[paper](https://openreview.net/forum?id=b89JtZj9gm){: file} [project page](https://torrvision.com/njpp/){: file}
+[paper](https://openreview.net/forum?id=b89JtZj9gm){: file} [project page](https://torrvision.com/njpp/){: file}     
+<span style="font-size:0.67em;">(\* denotes equal contribution.)</span>
 
 <div id="judel2"></div>
 Zhang, Y.\*, <ins>**Davies, A.**\*</ins>, & Zhai, C. (2024). Understanding the social construction of juvenile delinquency: insights from semantic analysis of big-data historical newspaper collections. *Journal of Computational Social Science*, 1-43.     
-[paper](https://link.springer.com/article/10.1007/s42001-024-00254-x){: file} 
+[paper](https://link.springer.com/article/10.1007/s42001-024-00254-x){: file}     
+<span style="font-size:0.67em;">(\* denotes equal contribution.)</span>
 
 <div id="calm"></div>
 <ins>**Davies, A.**</ins>, Jiang, J., & Zhai, C. (2023). Competence-Based Analysis of Language Models. *arXiv preprint arXiv:2303.00333.*     
