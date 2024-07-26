@@ -8,8 +8,8 @@ author_profile: true
 {:file: .btn type="application/pdf"}
 
 <div id="njpp"></div>
-Yuan, J.\*, Pinto, F.\*, <ins>**Davies, A.**\*</ins>, & Torr, P. (2024). Not Just Pretty Pictures: Toward Interventional Data Augmentation Using Text-to-Image Generators. *Forty-First International Conference on Machine Learning*.     
-[paper](https://openreview.net/forum?id=b89JtZj9gm){: file} [project page](https://torrvision.com/njpp/){: file}     
+Yuan, J.\*, Pinto, F.\*, <ins>**Davies, A.**\*</ins>, & Torr, P. (2024). Not Just Pretty Pictures: Toward Interventional Data Augmentation Using Text-to-Image Generators. *Proceedings of the 41st International Conference on Machine Learning*.     
+[paper](https://proceedings.mlr.press/v235/yuan24e.html){: file} [webpage](https://torrvision.com/njpp/){: file} [poster](https://icml.cc/media/PosterPDFs/ICML%202024/33652.png?t=1720142495.262929){: file} [video](https://www.youtube.com/watch?v=19bBFg5wJ3Y){: file} [code](https://github.com/YuanJianhao508/NotJustPrettyPictures){: file}     
 <span style="font-size:0.67em;">(\* denotes equal contribution.)</span>
 
 <div id="judel2"></div>
