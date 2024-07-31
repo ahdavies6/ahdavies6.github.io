@@ -19,8 +19,8 @@ masthead_title: ""
 title_separator: "|"
 email: adavies4@illinois.edu
 description: "Adam Davies, CS PhD student @ UIUC."
-# twitter_username: username
-github_username: ahdavies6
+twitter_username: adamdaviesnlp
+# github_username: ahdavies6
 linkedin_username: adamhdavies
 minimal_mistakes_skin: dark
 # search: false
@@ -72,15 +72,16 @@ author:
   uri       : "https://ahdavies6.github.io/"
   email     : adavies4@illinois.edu
   linkedin  : adamhdavies
-  github    : ahdavies6
   # location  : "Urbana, IL"
-  links:
-    - label: "Scholar"
-      icon: "ai ai-google-scholar"
-      url: "https://scholar.google.com/citations?user=vqkOH7gAAAAJ&hl=en"
-    - label: "ORCID"
-      icon: "ai ai-orcid"
-      url: "https://orcid.org/0000-0002-0610-2732"
+  twitter   : adamdaviesnlp
+  # github    : ahdavies6
+  links :
+    - label : "Scholar"
+      icon  : "ai ai-google-scholar"
+      url   : "https://scholar.google.com/citations?user=vqkOH7gAAAAJ&hl=en"
+    # - label : "ORCID"
+    #   icon  : "ai ai-orcid"
+    #   url   : "https://orcid.org/0000-0002-0610-2732"
 
 # footer:
 #   links:
