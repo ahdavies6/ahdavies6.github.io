@@ -7,6 +7,10 @@ author_profile: true
 
 {:file: .btn type="application/pdf"}
 
+<div id="coginterp"></div>
+<ins>**Davies, A.**\*</ins>, & Khakzar, A. (2024). The Cognitive Revolution in Interpretability: From Explaining Behavior to Interpreting Representations and Algorithms. *arXiv preprint arXiv:2408.05859.*
+[preprint](https://arxiv.org/abs/2408.05859){: file}
+
 <div id="njpp"></div>
 Yuan, J.\*, Pinto, F.\*, <ins>**Davies, A.**\*</ins>, & Torr, P. (2024). Not Just Pretty Pictures: Toward Interventional Data Augmentation Using Text-to-Image Generators. *Proceedings of the 41st International Conference on Machine Learning*.     
 [paper](https://proceedings.mlr.press/v235/yuan24e.html){: file} [webpage](https://torrvision.com/njpp/){: file} [poster](https://icml.cc/media/PosterPDFs/ICML%202024/33652.png?t=1720142495.262929){: file} [video](https://www.youtube.com/watch?v=19bBFg5wJ3Y){: file} [code](https://github.com/YuanJianhao508/NotJustPrettyPictures){: file}     
