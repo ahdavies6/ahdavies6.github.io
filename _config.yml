@@ -62,6 +62,10 @@ plugins:
   - jekyll-include-cache
   - jekyll-redirect-from
   - minimal-mistakes-jekyll
+  - jekyll-scholar
+
+scholar:
+  style: apa
 
 author:
   name      : "Adam Davies"
