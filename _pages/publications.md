@@ -63,6 +63,10 @@ Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & 
 
 ## preprints
 
+<div id="cpreliable"></div>
+Canby, M., <ins>**Davies, A.**</ins>, Rastogi, C., & Hockenmaier, J. (2024). Measuring the Reliability of Causal Probing Methods: Tradeoffs, Limitations, and the Plight of Nullifying Interventions. *arXiv preprint arXiv:2408.15510.*
+[preprint](https://arxiv.org/abs/2408.15510){: file}
+
 <div id="coginterp"></div>
 <ins>**Davies, A.**</ins>, & Khakzar, A. (2024). The Cognitive Revolution in Interpretability: From Explaining Behavior to Interpreting Representations and Algorithms. *arXiv preprint arXiv:2408.05859.*
 [preprint](https://arxiv.org/abs/2408.05859){: file}
