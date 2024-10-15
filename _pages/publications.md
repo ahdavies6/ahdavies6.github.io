@@ -68,7 +68,7 @@ Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & 
 ## preprints
 
 <div id="simlearner"></div>
-Canby, M., <ins>**Davies, A.**</ins>, Rastogi, C., & Hockenmaier, J. (2024). Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments. *arXiv preprint arXiv:2410.02110.*
+Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E. (2024). Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments. *arXiv preprint arXiv:2410.02110.*
 [preprint](https://arxiv.org/abs/2410.02110){: file}
 
 <div id="cpreliable"></div>
