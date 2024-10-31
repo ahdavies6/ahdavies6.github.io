@@ -57,26 +57,30 @@ Zhang, Y.\*, <ins>**Davies, A.**\*</ins>, & Zhai, C. (2024). Understanding the s
 <span style="font-size:0.67em;">(\* denotes equal contribution.)</span>
 
 <div id="judel"></div>
-Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & Zhai, C. (2022). Toward a Big Data Analysis System for Historical Newspaper Collections Research. _Proceedings of the Platform for Advanced Scientific Computing Conference_. [doi:10.1145/3539781.3539795](https://doi.org/10.1145/3539781.3539795)  
+Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & Zhai, C. (2022). Toward a Big Data Analysis System for Historical Newspaper Collections Research. _Proceedings of the Platform for Advanced Scientific Computing Conference_. [doi:10.1145/3539781.3539795](https://doi.org/10.1145/3539781.3539795)       
 [paper](https://dl.acm.org/doi/pdf/10.1145/3539781.3539795){: file} [slides](assets/docs/PASC22/slides.pdf){: file} [video](https://player.vimeo.com/video/724457511?app_id=122963&h=015bc4614c&referrer=https%3A%2F%2Fpasc22.e-event.ch%2F#t=33m15s){: file}
 
-<ins>**Davies, A.**</ins> (2021). *Definitional Templating: A Novel Approach to Modeling the Compositional Semantics of Noun Compounds* (Publication No. UUCS 21-013).  
+<ins>**Davies, A.**</ins> (2021). *Definitional Templating: A Novel Approach to Modeling the Compositional Semantics of Noun Compounds* (Publication No. UUCS 21-013).       
 [senior thesis](https://www.cs.utah.edu/docs/techreports/2021/PDF/UUCS-21-013.pdf){: file}
 
 <div class="break"></div>
 
 ## preprints
 
+<div id="fit"></div>
+Lamb, T., <ins>**Davies, A.**</ins>, Paren, A., Torr, P., Pinto, F (2024). Focus On This, Not That! Steering LLMs With Adaptive Feature Specification. *arXiv preprint arXiv:2410.22944.*     
+[preprint](https://arxiv.org/abs/2410.22944){: file}
+
 <div id="simlearner"></div>
-Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E. (2024). Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments. *arXiv preprint arXiv:2410.02110.*
+Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E. (2024). Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments. *arXiv preprint arXiv:2410.02110.*     
 [preprint](https://arxiv.org/abs/2410.02110){: file}
 
 <div id="cpreliable"></div>
-Canby, M., <ins>**Davies, A.**</ins>, Rastogi, C., & Hockenmaier, J. (2024). Measuring the Reliability of Causal Probing Methods: Tradeoffs, Limitations, and the Plight of Nullifying Interventions. *arXiv preprint arXiv:2408.15510.*
+Canby, M., <ins>**Davies, A.**</ins>, Rastogi, C., & Hockenmaier, J. (2024). Measuring the Reliability of Causal Probing Methods: Tradeoffs, Limitations, and the Plight of Nullifying Interventions. *arXiv preprint arXiv:2408.15510.*     
 [preprint](https://arxiv.org/abs/2408.15510){: file}
 
 <div id="coginterp"></div>
-<ins>**Davies, A.**</ins>, & Khakzar, A. (2024). The Cognitive Revolution in Interpretability: From Explaining Behavior to Interpreting Representations and Algorithms. *arXiv preprint arXiv:2408.05859.*
+<ins>**Davies, A.**</ins>, & Khakzar, A. (2024). The Cognitive Revolution in Interpretability: From Explaining Behavior to Interpreting Representations and Algorithms. *arXiv preprint arXiv:2408.05859.*     
 [preprint](https://arxiv.org/abs/2408.05859){: file}
 
 <div id="calm"></div>
