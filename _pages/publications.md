@@ -42,6 +42,10 @@ author_profile: true
 
 ## published works
 
+<div id="illusionbench"></div>
+Hemmat, A., <ins>**Davies, A.**</ins>, Lamb, T., Yuan, J., Torr, P., Khakzar, A., & Pinto, F. (2024). Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models. In *Thirty-eighth Conference on Neural Information Processing Systems.*     
+[paper](https://arxiv.org/abs/2411.06287){: file} [webpage](https://arshiahemmat.github.io/illusionbench/){: file} [dataset](https://huggingface.co/datasets/arshiahemmat/IllusionBench){: file} [code](https://github.com/arshiahemmat/IllusionBench_codebase){: file}
+
 <div id="wholelearner"></div>
 Mannekote, A., <ins>**Davies, A.**</ins>, Pinto, J. D., Zhang, S., Olds, D., Schroeder, N. L., ... & Zhai, C. (2024). Large Language Models for Whole-Learner Support: Opportunities and Challenges. *Frontiers in Artificial Intelligence, 7.*     
 [paper](https://doi.org/10.3389/frai.2024.1460364){: file}
