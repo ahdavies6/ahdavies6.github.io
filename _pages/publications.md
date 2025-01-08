@@ -42,9 +42,22 @@ author_profile: true
 
 ## published works
 
+<div id="simlearner"></div>
+Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E. (2025). Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments. *Accepted for publication in AAAI-25.*     
+[preprint](https://arxiv.org/abs/2410.02110){: file}
+
 <div id="illusionbench"></div>
 Hemmat, A., <ins>**Davies, A.**</ins>, Lamb, T., Yuan, J., Torr, P., Khakzar, A., & Pinto, F. (2024). Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models. In *Thirty-eighth Conference on Neural Information Processing Systems.*     
 [paper](https://openreview.net/forum?id=VJuSeShdZA){: file} [webpage](https://arshiahemmat.github.io/illusionbench/){: file} [dataset](https://huggingface.co/datasets/arshiahemmat/IllusionBench){: file} [code](https://github.com/arshiahemmat/IllusionBench_codebase){: file}
+
+<div id="cpreliable"></div>
+Canby, M.\*, <ins>**Davies, A.\***</ins>, Rastogi, C., & Hockenmaier, J. (2024). Measuring the Reliability of Causal Probing Methods: Tradeoffs, Limitations, and the Plight of Nullifying Interventions. In *NeurIPS 2024 Workshop on Interpretable AI* (Oral).     
+[paper](https://openreview.net/forum?id=tmpMQLxVHh){: file}     
+<span style="font-size:0.67em;">(\* denotes equal contribution.)</span>
+
+<div id="calm"></div>
+<ins>**Davies, A.**</ins>, Jiang, J., & Zhai, C. (2024). Competence-Based Analysis of Language Models. In *NeurIPS 2024 Workshop on Interpretable AI.*     
+[paper](https://openreview.net/forum?id=x6ZM5Is2Po){: file}
 
 <div id="wholelearner"></div>
 Mannekote, A., <ins>**Davies, A.**</ins>, Pinto, J. D., Zhang, S., Olds, D., Schroeder, N. L., ... & Zhai, C. (2024). Large Language Models for Whole-Learner Support: Opportunities and Challenges. *Frontiers in Artificial Intelligence, 7.*     
@@ -71,22 +84,14 @@ Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & 
 
 ## preprints
 
+<div id="aiss"></div>
+<ins>**Davies, A.**</ins>, Nguyen, E., Simeone, M., Johnston, E., & Gubri, M. (2024). Social Science Is Necessary for Operationalizing Socially Responsible Foundation Models. *arXiv preprint arXiv:2412.16355.*     
+[preprint](https://arxiv.org/abs/2410.22944){: file}
+
 <div id="fit"></div>
 Lamb, T., <ins>**Davies, A.**</ins>, Paren, A., Torr, P., Pinto, F (2024). Focus On This, Not That! Steering LLMs With Adaptive Feature Specification. *arXiv preprint arXiv:2410.22944.*     
 [preprint](https://arxiv.org/abs/2410.22944){: file}
 
-<div id="simlearner"></div>
-Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E. (2024). Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments. *arXiv preprint arXiv:2410.02110.*     
-[preprint](https://arxiv.org/abs/2410.02110){: file}
-
-<div id="cpreliable"></div>
-Canby, M., <ins>**Davies, A.**</ins>, Rastogi, C., & Hockenmaier, J. (2024). Measuring the Reliability of Causal Probing Methods: Tradeoffs, Limitations, and the Plight of Nullifying Interventions. *arXiv preprint arXiv:2408.15510.*     
-[preprint](https://arxiv.org/abs/2408.15510){: file}
-
 <div id="coginterp"></div>
 <ins>**Davies, A.**</ins>, & Khakzar, A. (2024). The Cognitive Revolution in Interpretability: From Explaining Behavior to Interpreting Representations and Algorithms. *arXiv preprint arXiv:2408.05859.*     
 [preprint](https://arxiv.org/abs/2408.05859){: file}
-
-<div id="calm"></div>
-<ins>**Davies, A.**</ins>, Jiang, J., & Zhai, C. (2023). Competence-Based Analysis of Language Models. *arXiv preprint arXiv:2303.00333.*     
-[preprint](https://arxiv.org/abs/2303.00333){: file}
