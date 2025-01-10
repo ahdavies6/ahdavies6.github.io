@@ -86,7 +86,7 @@ Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & 
 
 <div id="aiss"></div>
 <ins>**Davies, A.**</ins>, Nguyen, E., Simeone, M., Johnston, E., & Gubri, M. (2024). Social Science Is Necessary for Operationalizing Socially Responsible Foundation Models. *arXiv preprint arXiv:2412.16355.*     
-[preprint](https://arxiv.org/abs/2410.22944){: file}
+[preprint](https://www.arxiv.org/abs/2412.16355){: file}
 
 <div id="fit"></div>
 Lamb, T., <ins>**Davies, A.**</ins>, Paren, A., Torr, P., Pinto, F (2024). Focus On This, Not That! Steering LLMs With Adaptive Feature Specification. *arXiv preprint arXiv:2410.22944.*     
