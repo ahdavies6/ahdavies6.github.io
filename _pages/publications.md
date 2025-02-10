@@ -52,7 +52,7 @@ Hemmat, A., <ins>**Davies, A.**</ins>, Lamb, T., Yuan, J., Torr, P., Khakzar, A.
 
 <div id="cpreliable"></div>
 Canby, M.\*, <ins>**Davies, A.\***</ins>, Rastogi, C., & Hockenmaier, J. (2024). Measuring the Reliability of Causal Probing Methods: Tradeoffs, Limitations, and the Plight of Nullifying Interventions. In *NeurIPS 2024 Workshop on Interpretable AI* (Oral).     
-[paper](https://openreview.net/forum?id=tmpMQLxVHh){: file}     
+[2024 IAI paper](https://openreview.net/forum?id=tmpMQLxVHh){: file} [2025 preprint](https://arxiv.org/abs/2408.15510){: file}     
 <span style="font-size:0.67em;">(\* denotes equal contribution.)</span>
 
 <div id="calm"></div>
