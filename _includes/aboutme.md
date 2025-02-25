@@ -1,8 +1,8 @@
 Hi! My name is Adam Davies, and I'm a CS PhD student at the [University of Illinois Urbana-Champaign](https://illinois.edu/) co-advised by Professor [ChengXiang Zhai](http://czhai.cs.illinois.edu/) and Professor [Julia Hockenmaier](https://hockenmaier.cs.illinois.edu/).
 
 <!-- My current research generally falls within natural language processing (NLP), interpretable machine learning, computational semantics, and multimodal representation learning.  -->
-My primary research areas are natural language processing, (mechanistic) interpretability, distribution-shift robustness, causal machine learning, and multimodal representation learning.
-In particular, I am focused on interpretable analysis of semantic representation in large language models (LLMs) and multimodal vision-language models (VLMs), studying how these models learn and represent the meaning in language and the visual world as compared to us humans.
+My primary research areas are natural language processing, (mechanistic) interpretability, distribution-shift robustness, causal machine learning, synthetic data, and multimodal representation learning.
+In particular, I am focused on interpretable analysis of semantic representation in large language models and multimodal vision-language models, studying how these models learn and represent the meaning in language and the visual world as compared to us humans.
 (For more details, see my [research agenda]({% link _pages/research.md %}).)
 
 These are my [recent publications]({% link _pages/publications.md %}).
