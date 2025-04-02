@@ -89,6 +89,10 @@ Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & 
 ## preprints
 
 <div id="fit"></div>
+Lee, S., <ins>**Davies, A.**</ins>, Canby, M., Hockenmaier, J. (2025). Evaluating and Designing Sparse Autoencoders by Approximating Quasi-Orthogonality *arXiv preprint arXiv:2503.24277*     
+[preprint](https://arxiv.org/abs/2503.24277){: file}
+
+<div id="fit"></div>
 Lamb, T., <ins>**Davies, A.**</ins>, Paren, A., Torr, P., Pinto, F (2024). Focus On This, Not That! Steering LLMs With Adaptive Feature Specification. *arXiv preprint arXiv:2410.22944.*     
 [preprint](https://arxiv.org/abs/2410.22944){: file}
 
