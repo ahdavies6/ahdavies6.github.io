@@ -42,9 +42,13 @@ author_profile: true
 
 ## published works
 
+<div id="aiss"></div>
+<ins>**Davies, A.**</ins>, Nguyen, E., Simeone, M., Johnston, E., & Gubri, M. (2025). Social Science Is Necessary for Operationalizing Socially Responsible Foundation Models. In *ICLR 2025 Workshop on Human-AI Coevolution.*     
+[paper](https://openreview.net/forum?id=zbB2vjAq7X){: file}
+
 <div id="simlearner"></div>
-Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E. (2025). Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments. *Accepted for publication in AAAI-25.*     
-[preprint](https://arxiv.org/abs/2410.02110){: file}
+Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E. (2025). Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments. *Proceedings of the AAAI Conference on Artificial Intelligence, 39.*     
+[preprint](https://arxiv.org/abs/2410.02110){: file} [code](https://github.com/msamogh/hypmix){: file}     
 
 <div id="illusionbench"></div>
 Hemmat, A., <ins>**Davies, A.**</ins>, Lamb, T., Yuan, J., Torr, P., Khakzar, A., & Pinto, F. (2024). Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models. In *Thirty-eighth Conference on Neural Information Processing Systems.*     
@@ -83,10 +87,6 @@ Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & 
 <div class="break"></div>
 
 ## preprints
-
-<div id="aiss"></div>
-<ins>**Davies, A.**</ins>, Nguyen, E., Simeone, M., Johnston, E., & Gubri, M. (2024). Social Science Is Necessary for Operationalizing Socially Responsible Foundation Models. *arXiv preprint arXiv:2412.16355.*     
-[preprint](https://www.arxiv.org/abs/2412.16355){: file}
 
 <div id="fit"></div>
 Lamb, T., <ins>**Davies, A.**</ins>, Paren, A., Torr, P., Pinto, F (2024). Focus On This, Not That! Steering LLMs With Adaptive Feature Specification. *arXiv preprint arXiv:2410.22944.*     
