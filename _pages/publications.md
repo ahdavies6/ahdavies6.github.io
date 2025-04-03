@@ -47,12 +47,12 @@ author_profile: true
 [paper](https://openreview.net/forum?id=zbB2vjAq7X){: file}
 
 <div id="simlearner"></div>
-Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E. (2025). Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments. *Proceedings of the AAAI Conference on Artificial Intelligence, 39.*     
+Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E. (2025). Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments. *Proceedings of the AAAI Conference on Artificial Intelligence,* 39.     
 [preprint](https://arxiv.org/abs/2410.02110){: file} [code](https://github.com/msamogh/hypmix){: file}     
 
 <div id="illusionbench"></div>
-Hemmat, A., <ins>**Davies, A.**</ins>, Lamb, T., Yuan, J., Torr, P., Khakzar, A., & Pinto, F. (2024). Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models. In *Thirty-eighth Conference on Neural Information Processing Systems.*     
-[paper](https://openreview.net/forum?id=VJuSeShdZA){: file} [webpage](https://arshiahemmat.github.io/illusionbench/){: file} [dataset](https://huggingface.co/datasets/arshiahemmat/IllusionBench){: file} [code](https://github.com/arshiahemmat/IllusionBench_codebase){: file}
+Hemmat, A., <ins>**Davies, A.**</ins>, Lamb, T., Yuan, J., Torr, P., Khakzar, A., & Pinto, F. (2024). Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models. *Advances in Neural Information Processing Systems,* 37, 88527-88556.        
+[paper](https://papers.nips.cc/paper_files/paper/2024/hash/a13ff984831deea39e6132bafdfdd6d5-Abstract-Datasets_and_Benchmarks_Track.html){: file} [webpage](https://arshiahemmat.github.io/illusionbench/){: file} [dataset](https://huggingface.co/datasets/arshiahemmat/IllusionBench){: file} [code](https://github.com/arshiahemmat/IllusionBench_codebase){: file}
 
 <div id="cpreliable"></div>
 Canby, M.\*, <ins>**Davies, A.\***</ins>, Rastogi, C., & Hockenmaier, J. (2024). Measuring the Reliability of Causal Probing Methods: Tradeoffs, Limitations, and the Plight of Nullifying Interventions. In *NeurIPS 2024 Workshop on Interpretable AI* (Oral).     
