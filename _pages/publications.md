@@ -44,11 +44,11 @@ author_profile: true
 
 <div id="aiss"></div>
 <ins>**Davies, A.**</ins>, Nguyen, E., Simeone, M., Johnston, E., & Gubri, M. (2025). Social Science Is Necessary for Operationalizing Socially Responsible Foundation Models. In *ICLR 2025 Workshop on Human-AI Coevolution.*     
-[paper](https://openreview.net/forum?id=zbB2vjAq7X){: file}
+[paper](https://openreview.net/forum?id=zbB2vjAq7X){: file} [poster](assets/pdfs/AISS_ICLR_HAIC_poster_2025.pdf){: file}
 
 <div id="simlearner"></div>
-Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E. (2025). Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments. *Proceedings of the AAAI Conference on Artificial Intelligence,* 39.     
-[paper](https://eaai-conf.github.io/year/eaai-25.html#:~:text=Can%20LLMs%20Reliably%20Simulate%20Human%20Learner%20Actions%3F){: file} [preprint](https://arxiv.org/abs/2410.02110){: file} [code](https://github.com/msamogh/hypmix){: file}     
+Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E. (2025). Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments. In *Proceedings of the AAAI Conference on Artificial Intelligence* (Vol. 39, No. 28, pp. 29044-29052).     
+[paper](https://doi.org/10.1609/aaai.v39i28.35175){: file} [code](https://github.com/msamogh/hypmix){: file}     
 
 <div id="illusionbench"></div>
 Hemmat, A., <ins>**Davies, A.**</ins>, Lamb, T., Yuan, J., Torr, P., Khakzar, A., & Pinto, F. (2024). Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models. *Advances in Neural Information Processing Systems,* 37, 88527-88556.        
