@@ -84,7 +84,7 @@ author:
       url   : "https://scholar.google.com/citations?user=vqkOH7gAAAAJ&hl=en"
     - label: "CV"
       icon: "fas fa-fw fa-file"
-      url: "/assets/pdfs/2025_Spring_CV.pdf"
+      url: "/assets/docs/2025_Spring_CV.pdf"
     # - label : "ORCID"
     #   icon  : "ai ai-orcid"
     #   url   : "https://orcid.org/0000-0002-0610-2732"

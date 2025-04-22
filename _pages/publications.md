@@ -44,7 +44,11 @@ author_profile: true
 
 <div id="aiss"></div>
 <ins>**Davies, A.**</ins>, Nguyen, E., Simeone, M., Johnston, E., & Gubri, M. (2025). Social Science Is Necessary for Operationalizing Socially Responsible Foundation Models. In *ICLR 2025 Workshop on Human-AI Coevolution.*     
-[paper](https://openreview.net/forum?id=zbB2vjAq7X){: file} [poster](assets/pdfs/AISS_ICLR_HAIC_poster_2025.pdf){: file}
+[paper](https://openreview.net/forum?id=zbB2vjAq7X){: file} [poster](assets/docs/ICLR25/AISS_ICLR_HAIC_poster_2025.pdf){: file}
+
+<div id="fit"></div>
+Lamb, T., <ins>**Davies, A.**</ins>, Paren, A., Torr, P., Pinto, F (2025). Focus On This, Not That! Steering LLMs With Adaptive Feature Specification. In *ICLR 2025 Workshop on Foundation Models in the Wild.*     
+[paper](https://openreview.net/forum?id=sNswXU3n07){: file}
 
 <div id="simlearner"></div>
 Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E. (2025). Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments. In *Proceedings of the AAAI Conference on Artificial Intelligence* (Vol. 39, No. 28, pp. 29044-29052).     
@@ -52,19 +56,19 @@ Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E. (2025). Can L
 
 <div id="illusionbench"></div>
 Hemmat, A., <ins>**Davies, A.**</ins>, Lamb, T., Yuan, J., Torr, P., Khakzar, A., & Pinto, F. (2024). Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models. *Advances in Neural Information Processing Systems,* 37, 88527-88556.        
-[paper](https://papers.nips.cc/paper_files/paper/2024/hash/a13ff984831deea39e6132bafdfdd6d5-Abstract-Datasets_and_Benchmarks_Track.html){: file} [webpage](https://arshiahemmat.github.io/illusionbench/){: file} [dataset](https://huggingface.co/datasets/arshiahemmat/IllusionBench){: file} [code](https://github.com/arshiahemmat/IllusionBench_codebase){: file}
+[webpage](https://arshiahemmat.github.io/illusionbench/){: file} [paper](https://papers.nips.cc/paper_files/paper/2024/hash/a13ff984831deea39e6132bafdfdd6d5-Abstract-Datasets_and_Benchmarks_Track.html){: file} [poster](https://neurips.cc/media/neurips-2024/Slides/97667_BKoEec6.pdf){: file} [dataset](https://huggingface.co/datasets/arshiahemmat/IllusionBench){: file} [code](https://github.com/arshiahemmat/IllusionBench_codebase){: file}
 
 <div id="cpreliable"></div>
 Canby, M.\*, <ins>**Davies, A.\***</ins>, Rastogi, C., & Hockenmaier, J. (2024). Measuring the Reliability of Causal Probing Methods: Tradeoffs, Limitations, and the Plight of Nullifying Interventions. In *NeurIPS 2024 Workshop on Interpretable AI* (Oral).     
-[2024 IAI paper](https://openreview.net/forum?id=tmpMQLxVHh){: file} [2025 preprint](https://arxiv.org/abs/2408.15510){: file}     
+[preprint (updated 2025)](https://arxiv.org/abs/2408.15510){: file} [IAI 2024 paper](https://openreview.net/forum?id=tmpMQLxVHh){: file} [IAI 2024 slides](assets/docs/NeurIPS24/IAI_CPR_talk.pdf){: file} [IAI 2024 poster](assets/docs/NeurIPS24/IAI_CPR_poster.pdf){: file}     
 <span style="font-size:0.67em;">(\* denotes equal contribution.)</span>
 
 <div id="calm"></div>
 <ins>**Davies, A.**</ins>, Jiang, J., & Zhai, C. (2024). Competence-Based Analysis of Language Models. In *NeurIPS 2024 Workshop on Interpretable AI.*     
-[paper](https://openreview.net/forum?id=x6ZM5Is2Po){: file}
+[paper](https://openreview.net/forum?id=x6ZM5Is2Po){: file} [poster](assets/docs/NeurIPS24/IAI_CALM_poster.pdf){: file}
 
 <div id="wholelearner"></div>
-Mannekote, A., <ins>**Davies, A.**</ins>, Pinto, J. D., Zhang, S., Olds, D., Schroeder, N. L., ... & Zhai, C. (2024). Large Language Models for Whole-Learner Support: Opportunities and Challenges. *Frontiers in Artificial Intelligence, 7.*     
+Mannekote, A., <ins>**Davies, A.**</ins>, Pinto, J. D., Zhang, S., Olds, D., Schroeder, N. L., ... & Zhai, C. (2024). Large Language Models for Whole-Learner Support: Opportunities and Challenges. *Frontiers in Artificial Intelligence, 7,* 1460364.     
 [paper](https://doi.org/10.3389/frai.2024.1460364){: file}
 
 <div id="njpp"></div>
@@ -78,8 +82,8 @@ Zhang, Y.\*, <ins>**Davies, A.**\*</ins>, & Zhai, C. (2024). Understanding the s
 <span style="font-size:0.67em;">(\* denotes equal contribution.)</span>
 
 <div id="judel"></div>
-Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & Zhai, C. (2022). Toward a Big Data Analysis System for Historical Newspaper Collections Research. _Proceedings of the Platform for Advanced Scientific Computing Conference_. [doi:10.1145/3539781.3539795](https://doi.org/10.1145/3539781.3539795)       
-[paper](https://dl.acm.org/doi/pdf/10.1145/3539781.3539795){: file} [slides](assets/docs/PASC22/slides.pdf){: file} [video](https://player.vimeo.com/video/724457511?app_id=122963&h=015bc4614c&referrer=https%3A%2F%2Fpasc22.e-event.ch%2F#t=33m15s){: file}
+Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & Zhai, C. (2022). Toward a Big Data Analysis System for Historical Newspaper Collections Research. In _Proceedings of the Platform for Advanced Scientific Computing Conference_ (pp. 1-11).       
+[paper](https://doi.org/10.1145/3539781.3539795){: file} [slides](assets/docs/PASC22/slides.pdf){: file} [video](https://player.vimeo.com/video/724457511?app_id=122963&h=015bc4614c&referrer=https%3A%2F%2Fpasc22.e-event.ch%2F#t=33m15s){: file}
 
 <ins>**Davies, A.**</ins> (2021). *Definitional Templating: A Novel Approach to Modeling the Compositional Semantics of Noun Compounds* (Publication No. UUCS 21-013).       
 [senior thesis](https://www.cs.utah.edu/docs/techreports/2021/PDF/UUCS-21-013.pdf){: file}
@@ -88,13 +92,9 @@ Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & 
 
 ## preprints
 
-<div id="fit"></div>
+<div id="afa"></div>
 Lee, S., <ins>**Davies, A.**</ins>, Canby, M., Hockenmaier, J. (2025). Evaluating and Designing Sparse Autoencoders by Approximating Quasi-Orthogonality *arXiv preprint arXiv:2503.24277*     
 [preprint](https://arxiv.org/abs/2503.24277){: file}
-
-<div id="fit"></div>
-Lamb, T., <ins>**Davies, A.**</ins>, Paren, A., Torr, P., Pinto, F (2024). Focus On This, Not That! Steering LLMs With Adaptive Feature Specification. *arXiv preprint arXiv:2410.22944.*     
-[preprint](https://arxiv.org/abs/2410.22944){: file}
 
 <div id="coginterp"></div>
 <ins>**Davies, A.**</ins>, & Khakzar, A. (2024). The Cognitive Revolution in Interpretability: From Explaining Behavior to Interpreting Representations and Algorithms. *arXiv preprint arXiv:2408.05859.*     
