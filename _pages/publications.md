@@ -42,13 +42,13 @@ author_profile: true
 
 ## published works
 
+<div id="fit"></div>
+Lamb, T., <ins>**Davies, A.**</ins>, Paren, A., Torr, P., Pinto, F (2025). Focus On This, Not That! Steering LLMs with Adaptive Feature Specification. *Forty-Second International Conference on Machine Learning.*     
+[webpage](https://tomalamb.github.io/focus-instruction-tuning/){: file} [paper](https://openreview.net/forum?id=rbI5mOUA8Z){: file} [slides](https://icml.cc/media/icml-2025/Slides/43885_r2yxVZ6.pdf){: file} [code](https://github.com/tomalamb/fit){: file}
+
 <div id="aiss"></div>
 <ins>**Davies, A.**</ins>, Nguyen, E., Simeone, M., Johnston, E., & Gubri, M. (2025). Social Science Is Necessary for Operationalizing Socially Responsible Foundation Models. In *ICLR 2025 Workshop on Human-AI Coevolution.*     
 [paper](https://openreview.net/forum?id=zbB2vjAq7X){: file} [poster](assets/docs/ICLR25/AISS_ICLR_HAIC_poster_2025.pdf){: file}
-
-<div id="fit"></div>
-Lamb, T., <ins>**Davies, A.**</ins>, Paren, A., Torr, P., Pinto, F (2025). Focus On This, Not That! Steering LLMs With Adaptive Feature Specification. In *ICLR 2025 Workshop on Foundation Models in the Wild.*     
-[paper](https://openreview.net/forum?id=sNswXU3n07){: file}
 
 <div id="simlearner"></div>
 Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E. (2025). Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments. In *Proceedings of the AAAI Conference on Artificial Intelligence* (Vol. 39, No. 28, pp. 29044-29052).     
