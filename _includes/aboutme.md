@@ -1,9 +1,9 @@
 Hello there! 👋 My name is Adam Davies, and I'm a CS PhD candidate in the [Siebel School of Computing and Data Science](https://siebelschool.illinois.edu/) at [UIUC](https://illinois.edu/). This summer (2025), I'm also a research intern at [Microsoft Research](https://www.microsoft.com/en-us/research/).
 
-I like to describe my research vision in terms of the "cognitive neuropsychology of AI" -- where cognitive scientists like psychologists or neuroscientists study how intelligent systems like the minds/brains of humans and other intelligent animals learn, represent, and process information, I am focused on performing [similar analysis with respect to foundation models like LLMs](https://arxiv.org/abs/2408.05859).
+My [research vision](https://arxiv.org/abs/2408.05859) is to help build the foundations of a ***cognitive science of AI*** -- that is: where cognitive scientists like psychologists, neuroscientists, linguists, or philosophers of mind study *how intelligent systems* like the minds/brains of humans (and other intelligent animals) *learn, represent, and process information,* I am focused on *performing [analogous study with respect to foundation models like LLMs](https://arxiv.org/abs/2408.05859).*
 <!-- In particular, my main focus is on interpretable analysis of semantic representation in foundation models like large language models, studying how they learn, represent, and process the meaning in language. -->
 
-[My work]({% link _pages/publications.md %}) intersects with topics including natural language processing, (mechanistic) interpretability, cognitive science, distribution-shift robustness, causal machine learning, synthetic data, multimodal representation learning, and computational social science.
+[My work]({% link _pages/publications.md %}) intersects primarily with *natural language processing, (mechanistic) interpretability, cognitive science, and OOD generalization,* with a secondary focus on causal machine learning, synthetic data, multimodal representation learning, and computational social science.
 
 ## where's Adam?
 
