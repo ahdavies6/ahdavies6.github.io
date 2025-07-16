@@ -46,7 +46,11 @@ author_profile: true
 *Focus On This, Not That! Steering LLMs with Adaptive Feature Specification*
 **(ICML 2025)**          
 Lamb, T., <ins>**Davies, A.**</ins>, Paren, A., Torr, P., Pinto, F.                         
-[webpage](https://tomalamb.github.io/focus-instruction-tuning/){: file} [paper](https://openreview.net/forum?id=rbI5mOUA8Z){: file} [slides](https://icml.cc/media/icml-2025/Slides/43885_r2yxVZ6.pdf){: file} [code](https://github.com/tomalamb/fit){: file}
+[webpage](https://tomalamb.github.io/focus-instruction-tuning/){: file} 
+[paper](https://openreview.net/forum?id=rbI5mOUA8Z){: file} 
+[poster](https://icml.cc/media/PosterPDFs/ICML%202025/43885.png?t=1751877012.2165263){: file}
+[slides](https://icml.cc/media/icml-2025/Slides/43885_r2yxVZ6.pdf){: file} 
+[code](https://github.com/tomalamb/fit){: file}
 
 <div id="aiss"></div>         
 *Social Science Is Necessary for Operationalizing Socially Responsible Foundation Models*
@@ -114,7 +118,7 @@ Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & 
 
 <div id="afa"></div>
 *Evaluating and Designing Sparse Autoencoders by Approximating Quasi-Orthogonality*
-(Accepted to **COLM 2025**)        
+([Accepted](https://colmweb.org/AcceptedPapers.html) at **COLM 2025**)        
 Lee, S., <ins>**Davies, A.**</ins>, Canby, M., Hockenmaier, J.       
 [preprint](https://arxiv.org/abs/2503.24277){: file}
 
