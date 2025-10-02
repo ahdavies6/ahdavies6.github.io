@@ -42,6 +42,18 @@ author_profile: true
 
 ## published works
 
+<div id="afa"></div>
+*Evaluating and Designing Sparse Autoencoders by Approximating Quasi-Orthogonality*
+**(COLM 2025)**     
+Lee, S., <ins>**Davies, A.**</ins>, Canby, M., Hockenmaier, J.       
+[paper](https://openreview.net/forum?id=XhdNFeMclS){: file} 
+
+<div id="pwp"></div>
+*Do Role-Playing Agents Practice What They Preach? Belief-Behavior Alignment in LLM-Based Simulations of Human Trust*
+**(SocialSim @ COLM 2025)**     
+Mannekote, A., <ins>**Davies, A.**</ins>, Li, G., Boyer, K. E., Zhai, C., Dorr, B. J., & Pinto, F.        
+[paper](https://openreview.net/forum?id=1BDRPz3hcK){: file} 
+
 <div id="fit"></div>
 *Focus On This, Not That! Steering LLMs with Adaptive Feature Specification*
 **(ICML 2025)**          
@@ -115,12 +127,6 @@ Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & 
 <div class="break"></div>
 
 ## preprints
-
-<div id="afa"></div>
-*Evaluating and Designing Sparse Autoencoders by Approximating Quasi-Orthogonality*
-([Accepted](https://colmweb.org/AcceptedPapers.html) at **COLM 2025**)        
-Lee, S., <ins>**Davies, A.**</ins>, Canby, M., Hockenmaier, J.       
-[preprint](https://arxiv.org/abs/2503.24277){: file}
 
 <div id="coginterp"></div>
 *The Cognitive Revolution in Interpretability: From Explaining Behavior to Interpreting Representations and Algorithms*
