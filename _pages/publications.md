@@ -5,7 +5,8 @@ layout: single
 author_profile: true
 ---
 
-<style type="text/css">
+<!-- NOTE: this is the 2-COLUMN LAYOUT style -->
+<!-- <style type="text/css">
   /* --- PAGE MODIFICATIONS --- */
   /* doing this with the page allows us to take up everything right of the author profile sidebar -- otherwise, twocol is too narrow */
   .page {   
@@ -17,12 +18,16 @@ author_profile: true
     column-gap: 20px;
     /* column-rule: 1px solid #51555d; */
   }
-  /* reduce size of the top margin for h2 (## ...) blocks -- the only one changed is the first ome (2em -> 0em); and centering looks nicer here */
+  /* centered h2 looks better than left-aligned */
   h2 {
-    margin: 0em 0 0.5em;
+    margin: 0em 0 0;
     text-align: center;
   }
-
+  /* remove permalink on hover in section headers (moves it off-center, and also I really don't need it here to begin with) */
+  .header-link {
+    display: none;
+  }
+  
   /* --- CUSTOM DIVS --- */
   /* wrap the full page in <div class="twocol">...</div> to enable two-column mode, and use <div class="break"></div> to end a column and begin the next one */
   .twocol {
@@ -36,11 +41,24 @@ author_profile: true
   .break {
     break-before: column;
   }
+</style> -->
+
+<!-- NOTE: this is the 1-COLUMN LAYOUT style -->
+<style type="text/css">
+  /* centered h2 looks better than left-aligned */
+  h2 {
+    margin: 0em 0 0;
+    text-align: center;
+  }
+  /* remove permalink on hover in section headers (moves it off-center, and also I really don't need it here to begin with) */
+  .header-link {
+    display: none;
+  }
 </style>
 
 {:file: .btn type="application/pdf"}
 
-## published works
+<!-- ## published works -->
 
 <div id="afa"></div>
 *Evaluating and Designing Sparse Autoencoders by Approximating Quasi-Orthogonality*
@@ -124,7 +142,7 @@ Satheesan, S. P., Bhavya, <ins>**Davies, A.**</ins>, Craig, A. B., Zhang, Y., & 
 <!-- <ins>**Davies, A.**</ins> (2021). *Definitional Templating: A Novel Approach to Modeling the Compositional Semantics of Noun Compounds* (Publication No. UUCS 21-013).       
 [senior thesis](https://www.cs.utah.edu/docs/techreports/2021/PDF/UUCS-21-013.pdf){: file} -->
 
-<div class="break"></div>
+<!-- <div class="break"></div> -->
 
 ## preprints
 
