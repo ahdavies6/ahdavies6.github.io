@@ -5,7 +5,7 @@ layout: single
 author_profile: true
 ---
 
-<!-- NOTE: this is the 2-COLUMN LAYOUT style -->
+<!-- NOTE: this is the 2-COLUMN LAYOUT style (1-COL below) -->
 <!-- <style type="text/css">
   /* --- PAGE MODIFICATIONS --- */
   /* doing this with the page allows us to take up everything right of the author profile sidebar -- otherwise, twocol is too narrow */
@@ -43,7 +43,7 @@ author_profile: true
   }
 </style> -->
 
-<!-- NOTE: this is the 1-COLUMN LAYOUT style -->
+<!-- NOTE: this is the 1-COLUMN LAYOUT style (2-COL above) -->
 <style type="text/css">
   /* centered h2 looks better than left-aligned */
   h2 {
@@ -59,6 +59,16 @@ author_profile: true
 {:file: .btn type="application/pdf"}
 
 <!-- ## published works -->
+
+<div id="cpreliable"></div>
+*How Reliable are Causal Probing Interventions?*
+(Accepted for publication at **AACL 2025**)          
+Canby, M.\*, <ins>**Davies, A.\***</ins>, Rastogi, C., & Hockenmaier, J.      
+[preprint](https://arxiv.org/abs/2408.15510){: file}      
+<span style="font-size:0.67em;">(\* denotes equal contribution.)</span>        
+*Note: this work was originally presented at:* **IAI @ NeurIPS 2024 (Oral)**        
+<!-- [IAI 2024 paper](https://openreview.net/forum?id=tmpMQLxVHh){: file}  -->
+[slides (IAI 2024 oral)](assets/docs/NeurIPS24/IAI_CPR_talk.pdf){: file} [poster (IAI 2024)](assets/docs/NeurIPS24/IAI_CPR_poster.pdf){: file}     
 
 <div id="afa"></div>
 *Evaluating and Designing Sparse Autoencoders by Approximating Quasi-Orthogonality*
@@ -100,12 +110,12 @@ Mannekote, A., <ins>**Davies, A.**</ins>, Kang, J., & Boyer, K. E.
 Hemmat, A., <ins>**Davies, A.**</ins>, Lamb, T., Yuan, J., Torr, P., Khakzar, A., & Pinto, F.        
 [webpage](https://arshiahemmat.github.io/illusionbench/){: file} [paper](https://papers.nips.cc/paper_files/paper/2024/hash/a13ff984831deea39e6132bafdfdd6d5-Abstract-Datasets_and_Benchmarks_Track.html){: file} [poster](https://neurips.cc/media/neurips-2024/Slides/97667_BKoEec6.pdf){: file} [dataset](https://huggingface.co/datasets/arshiahemmat/IllusionBench){: file} [code](https://github.com/arshiahemmat/IllusionBench_codebase){: file}
 
-<div id="cpreliable"></div>
+<!-- <div id="cpreliable"></div>
 *Measuring the Reliability of Causal Probing Methods: Tradeoffs, Limitations, and the Plight of Nullifying Interventions*
 **(IAI @ NeurIPS 2024, Oral)**         
 Canby, M.\*, <ins>**Davies, A.\***</ins>, Rastogi, C., & Hockenmaier, J.      
 [preprint (updated 2025)](https://arxiv.org/abs/2408.15510){: file} [IAI 2024 paper](https://openreview.net/forum?id=tmpMQLxVHh){: file} [IAI 2024 slides](assets/docs/NeurIPS24/IAI_CPR_talk.pdf){: file} [IAI 2024 poster](assets/docs/NeurIPS24/IAI_CPR_poster.pdf){: file}     
-<span style="font-size:0.67em;">(\* denotes equal contribution.)</span>
+<span style="font-size:0.67em;">(\* denotes equal contribution.)</span> -->
 
 <div id="calm"></div>
 *Competence-Based Analysis of Language Models*

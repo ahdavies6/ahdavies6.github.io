@@ -72,15 +72,15 @@ author:
   email     : adavies4@illinois.edu
   linkedin  : adamhdavies
   # location  : "Urbana, IL"
-  twitter   : adamdaviesnlp
+  # twitter   : adamdaviesnlp
   # github    : ahdavies6
-  links :
-    - label: "Bluesky"
-      icon: "fab fa-fw fa-bluesky"
-      url: "https://bsky.app/profile/adamdaviesnlp.bsky.social"
+  links     :
     - label : "Scholar"
       icon  : "ai ai-google-scholar"
       url   : "https://scholar.google.com/citations?user=vqkOH7gAAAAJ&hl=en"
+    - label: "Bluesky"
+      icon: "fab fa-fw fa-bluesky"
+      url: "https://bsky.app/profile/adamdaviesnlp.bsky.social"
     - label: "CV"
       icon: "fas fa-fw fa-file"
       url: "/assets/docs/2025_Fall_CV.pdf"
