@@ -60,6 +60,12 @@ author_profile: true
 
 <!-- ## published works -->
 
+<div id="icl"></div>
+*Mechanisms of Symbol Processing for In-Context Learning in Transformer Networks*
+**(JAIR, Nov 2025)**       
+Smolensky, P., Fernandez, R., Zhou, Z. H., Opper, M., <ins>**Davies, A.\***</ins>, & Gao, J.         
+[paper](https://jair.org/index.php/jair/article/view/17469){: file} 
+
 <div id="cpreliable"></div>
 *How Reliable are Causal Probing Interventions?*
 (Accepted for publication at **AACL 2025**)          
