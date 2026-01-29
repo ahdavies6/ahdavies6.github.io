@@ -60,21 +60,21 @@ author_profile: true
 
 <!-- ## published works -->
 
+<div id="cpr"></div>
+*How Reliable are Causal Probing Interventions?*
+(**AACL 2025**)          
+Canby, M.\*, <ins>**Davies, A.\***</ins>, Rastogi, C., & Hockenmaier, J.      
+[paper](https://aclanthology.org/2025.ijcnlp-long.47/){: file}      
+<span style="font-size:0.67em;">(\* denotes equal contribution.)</span>        
+*Note: this work was originally presented at:* **IAI @ NeurIPS 2024 (Oral)**        
+<!-- [IAI 2024 paper](https://openreview.net/forum?id=tmpMQLxVHh){: file}  -->
+[slides (IAI 2024 oral)](assets/docs/NeurIPS24/IAI_CPR_talk.pdf){: file} [poster (IAI 2024)](assets/docs/NeurIPS24/IAI_CPR_poster.pdf){: file}     
+
 <div id="icl"></div>
 *Mechanisms of Symbol Processing for In-Context Learning in Transformer Networks*
 **(JAIR, Nov 2025)**       
 Smolensky, P., Fernandez, R., Zhou, Z. H., Opper, M., <ins>**Davies, A.\***</ins>, & Gao, J.         
 [paper](https://jair.org/index.php/jair/article/view/17469){: file} 
-
-<div id="cpreliable"></div>
-*How Reliable are Causal Probing Interventions?*
-(Accepted for publication at **AACL 2025**)          
-Canby, M.\*, <ins>**Davies, A.\***</ins>, Rastogi, C., & Hockenmaier, J.      
-[preprint](https://arxiv.org/abs/2408.15510){: file}      
-<span style="font-size:0.67em;">(\* denotes equal contribution.)</span>        
-*Note: this work was originally presented at:* **IAI @ NeurIPS 2024 (Oral)**        
-<!-- [IAI 2024 paper](https://openreview.net/forum?id=tmpMQLxVHh){: file}  -->
-[slides (IAI 2024 oral)](assets/docs/NeurIPS24/IAI_CPR_talk.pdf){: file} [poster (IAI 2024)](assets/docs/NeurIPS24/IAI_CPR_poster.pdf){: file}     
 
 <div id="afa"></div>
 *Evaluating and Designing Sparse Autoencoders by Approximating Quasi-Orthogonality*
