@@ -93,7 +93,7 @@ Mannekote, A., <ins>**Davies, A.**</ins>, Li, G., Boyer, K. E., Zhai, C., Dorr, 
 **(ICML 2025)**          
 Lamb, T., <ins>**Davies, A.**</ins>, Paren, A., Torr, P., Pinto, F.                         
 [webpage](https://tomalamb.github.io/focus-instruction-tuning/){: file} 
-[paper](https://openreview.net/forum?id=rbI5mOUA8Z){: file} 
+[paper](https://proceedings.mlr.press/v267/lamb25a.html){: file} 
 [poster](https://icml.cc/media/PosterPDFs/ICML%202025/43885.png?t=1751877012.2165263){: file}
 [slides](https://icml.cc/media/icml-2025/Slides/43885_r2yxVZ6.pdf){: file} 
 [code](https://github.com/tomalamb/fit){: file}

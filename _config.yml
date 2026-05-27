@@ -67,9 +67,9 @@ author:
   name      : "Adam Davies"
   pronouns  : "he/they"
   avatar    : "/assets/images/me.jpg"
-  bio       : "PhD candidate @ UIUC<br><small>NLP, interpretability, cognitive science</small>"
+  bio       : "Senior Applied Scientist @ Microsoft<br>(PhD @ UIUC, 2026)<br><small>AI interpretability, cognitive science, OOD generalization</small>"
   uri       : "https://ahdavies6.github.io/"
-  email     : adavies4@illinois.edu
+  email     : adamdavies@microsoft.com
   linkedin  : adamhdavies
   # location  : "Urbana, IL"
   # twitter   : adamdaviesnlp
