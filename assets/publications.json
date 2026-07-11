@@ -1,0 +1,1329 @@
+{
+  "generated_from": "publications.bib + meta.yml",
+  "tag_legend": {
+    "all": {
+      "emoji": "🗣️",
+      "label": "LLMs/NLP"
+    },
+    "mechinterp": {
+      "emoji": "🔎",
+      "label": "(mechanistic) interpretability"
+    },
+    "causal": {
+      "emoji": "🔨",
+      "label": "causality"
+    },
+    "ood": {
+      "emoji": "🗺️",
+      "label": "out-of-distribution"
+    },
+    "eval": {
+      "emoji": "📏",
+      "label": "evaluation + benchmarking"
+    },
+    "multimodal": {
+      "emoji": "👁️",
+      "label": "multimodality"
+    },
+    "sim": {
+      "emoji": "🎭",
+      "label": "simulation"
+    },
+    "edu": {
+      "emoji": "🎓",
+      "label": "AI for education"
+    },
+    "cogsci": {
+      "emoji": "🧠",
+      "label": "cognitive science"
+    },
+    "socsci": {
+      "emoji": "🌐",
+      "label": "social science"
+    },
+    "datasci": {
+      "emoji": "📊",
+      "label": "data science"
+    },
+    "synth": {
+      "emoji": "🖼️",
+      "label": "synthetic data"
+    },
+    "theory": {
+      "emoji": "💭",
+      "label": "theory"
+    }
+  },
+  "entries": [
+    {
+      "key": "davies2026interpreting",
+      "title": "Interpreting, Evaluating, and Controlling Features Learned and Leveraged by Foundation Models",
+      "authors": [
+        "Davies"
+      ],
+      "authors_raw": [
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        }
+      ],
+      "year": 2026,
+      "month": 4,
+      "is_workshop": false,
+      "venue": "Dissertation (UIUC)",
+      "venue_raw": "University of Illinois Urbana-Champaign",
+      "links": [
+        {
+          "type": "paper",
+          "url": "/assets/docs/dissertation.pdf"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "mechinterp",
+          "emoji": "🔎",
+          "label": "(mechanistic) interpretability"
+        },
+        {
+          "id": "cogsci",
+          "emoji": "🧠",
+          "label": "cognitive science"
+        },
+        {
+          "id": "causal",
+          "emoji": "🔨",
+          "label": "causality"
+        },
+        {
+          "id": "ood",
+          "emoji": "🗺️",
+          "label": "out-of-distribution"
+        },
+        {
+          "id": "theory",
+          "emoji": "💭",
+          "label": "theory"
+        },
+        {
+          "id": "eval",
+          "emoji": "📏",
+          "label": "evaluation + benchmarking"
+        },
+        {
+          "id": "synth",
+          "emoji": "🖼️",
+          "label": "synthetic data"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "phdthesis",
+      "search": "/assets/docs/dissertation.pdf university of illinois urbana-champaign apr 2026 davies, adam interpreting, evaluating, and controlling features learned and leveraged by foundation models dissertation (uiuc) llms/nlp 🗣️ (mechanistic) interpretability 🔎 cognitive science 🧠 causality 🔨 out-of-distribution 🗺️ theory 💭 evaluation + benchmarking 📏 synthetic data 🖼️"
+    },
+    {
+      "key": "canby2025how",
+      "title": "How Reliable are Causal Probing Interventions?",
+      "authors": [
+        "Canby*",
+        "Davies*",
+        "Rastogi",
+        "Hockenmaier"
+      ],
+      "authors_raw": [
+        {
+          "last": "Canby",
+          "first": "Marc E.",
+          "equal": true
+        },
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": true
+        },
+        {
+          "last": "Rastogi",
+          "first": "Chirag",
+          "equal": false
+        },
+        {
+          "last": "Hockenmaier",
+          "first": "Julia",
+          "equal": false
+        }
+      ],
+      "year": 2025,
+      "month": 12,
+      "is_workshop": false,
+      "venue": "IJCNLP-AACL",
+      "venue_raw": "Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://aclanthology.org/2025.ijcnlp-long.47/"
+        },
+        {
+          "type": "slides",
+          "url": "assets/docs/NeurIPS24/IAI_CPR_talk.pdf"
+        },
+        {
+          "type": "poster",
+          "url": "assets/docs/NeurIPS24/IAI_CPR_poster.pdf"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "mechinterp",
+          "emoji": "🔎",
+          "label": "(mechanistic) interpretability"
+        },
+        {
+          "id": "eval",
+          "emoji": "📏",
+          "label": "evaluation + benchmarking"
+        },
+        {
+          "id": "theory",
+          "emoji": "💭",
+          "label": "theory"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "inproceedings",
+      "search": "979-8-89176-298-5 857--878 https://aclanthology.org/2025.ijcnlp-long.47/ the asian federation of natural language processing and the association for computational linguistics mumbai, india 2025 december proceedings of the 14th international joint conference on natural language processing and the 4th conference of the asia-pacific chapter of the association for computational linguistics canby{*}, marc e. and davies{*}, adam and rastogi, chirag and hockenmaier, julia how reliable are causal probing interventions? ijcnlp-aacl llms/nlp 🗣️ (mechanistic) interpretability 🔎 evaluation + benchmarking 📏 theory 💭"
+    },
+    {
+      "key": "smolensky2025mechanisms",
+      "title": "Mechanisms of Symbol Processing for In-Context Learning in Transformer Networks",
+      "authors": [
+        "Smolensky",
+        "Fernandez",
+        "Zhou",
+        "Opper",
+        "Davies",
+        "Gao"
+      ],
+      "authors_raw": [
+        {
+          "last": "Smolensky",
+          "first": "Paul",
+          "equal": false
+        },
+        {
+          "last": "Fernandez",
+          "first": "Roland",
+          "equal": false
+        },
+        {
+          "last": "Zhou",
+          "first": "Zhenghao Herbert",
+          "equal": false
+        },
+        {
+          "last": "Opper",
+          "first": "Mattia",
+          "equal": false
+        },
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        },
+        {
+          "last": "Gao",
+          "first": "Jianfeng",
+          "equal": false
+        }
+      ],
+      "year": 2025,
+      "month": 11,
+      "is_workshop": false,
+      "venue": "JAIR",
+      "venue_raw": "Journal of Artificial Intelligence Research",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://jair.org/index.php/jair/article/view/17469"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "cogsci",
+          "emoji": "🧠",
+          "label": "cognitive science"
+        },
+        {
+          "id": "mechinterp",
+          "emoji": "🔎",
+          "label": "(mechanistic) interpretability"
+        },
+        {
+          "id": "theory",
+          "emoji": "💭",
+          "label": "theory"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "article",
+      "search": "https://jair.org/index.php/jair/article/view/17469 nov 2025 23 84 journal of artificial intelligence research mechanisms of symbol processing for in-context learning in transformer networks paul smolensky and roland fernandez and zhenghao herbert zhou and mattia opper and adam davies and jianfeng gao jair llms/nlp 🗣️ cognitive science 🧠 (mechanistic) interpretability 🔎 theory 💭"
+    },
+    {
+      "key": "lee2025evaluating",
+      "title": "Evaluating and Designing Sparse Autoencoders by Approximating Quasi-Orthogonality",
+      "authors": [
+        "Lee",
+        "Davies",
+        "Canby",
+        "Hockenmaier"
+      ],
+      "authors_raw": [
+        {
+          "last": "Lee",
+          "first": "Sewoong",
+          "equal": false
+        },
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        },
+        {
+          "last": "Canby",
+          "first": "Marc E.",
+          "equal": false
+        },
+        {
+          "last": "Hockenmaier",
+          "first": "Julia",
+          "equal": false
+        }
+      ],
+      "year": 2025,
+      "month": 10,
+      "is_workshop": false,
+      "venue": "COLM",
+      "venue_raw": "Second Conference on Language Modeling",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://openreview.net/forum?id=XhdNFeMclS"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "mechinterp",
+          "emoji": "🔎",
+          "label": "(mechanistic) interpretability"
+        },
+        {
+          "id": "theory",
+          "emoji": "💭",
+          "label": "theory"
+        },
+        {
+          "id": "eval",
+          "emoji": "📏",
+          "label": "evaluation + benchmarking"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "inproceedings",
+      "search": "https://openreview.net/forum?id=xhdnfemcls oct 2025 second conference on language modeling sewoong lee and adam davies and marc e. canby and julia hockenmaier evaluating and designing sparse autoencoders by approximating quasi-orthogonality colm llms/nlp 🗣️ (mechanistic) interpretability 🔎 theory 💭 evaluation + benchmarking 📏"
+    },
+    {
+      "key": "mannekote2025role",
+      "title": "Do Role-Playing Agents Practice What They Preach? Belief-Behavior Alignment in LLM-Based Simulations of Human Trust",
+      "authors": [
+        "Mannekote",
+        "Davies",
+        "Li",
+        "Boyer",
+        "Zhai",
+        "Dorr",
+        "Pinto"
+      ],
+      "authors_raw": [
+        {
+          "last": "Mannekote",
+          "first": "Amogh",
+          "equal": false
+        },
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        },
+        {
+          "last": "Li",
+          "first": "Guohao",
+          "equal": false
+        },
+        {
+          "last": "Boyer",
+          "first": "Kristy Elizabeth",
+          "equal": false
+        },
+        {
+          "last": "Zhai",
+          "first": "ChengXiang",
+          "equal": false
+        },
+        {
+          "last": "Dorr",
+          "first": "Bonnie J",
+          "equal": false
+        },
+        {
+          "last": "Pinto",
+          "first": "Francesco",
+          "equal": false
+        }
+      ],
+      "year": 2025,
+      "month": 10,
+      "is_workshop": true,
+      "venue": "SocialSim @ COLM 2025",
+      "venue_raw": "First Workshop on Social Simulation with LLMs",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://openreview.net/forum?id=1BDRPz3hcK"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "sim",
+          "emoji": "🎭",
+          "label": "simulation"
+        },
+        {
+          "id": "socsci",
+          "emoji": "🌐",
+          "label": "social science"
+        },
+        {
+          "id": "eval",
+          "emoji": "📏",
+          "label": "evaluation + benchmarking"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "inproceedings",
+      "search": "https://openreview.net/forum?id=1bdrpz3hck oct 2025 first workshop on social simulation with llms amogh mannekote and adam davies and guohao li and kristy elizabeth boyer and chengxiang zhai and bonnie j dorr and francesco pinto do role-playing agents practice what they preach? belief-behavior alignment in {llm}-based simulations of human trust socialsim @ colm 2025 llms/nlp 🗣️ simulation 🎭 social science 🌐 evaluation + benchmarking 📏"
+    },
+    {
+      "key": "lamb2025focus",
+      "title": "Focus On This, Not That! Steering LLMs with Adaptive Feature Specification",
+      "authors": [
+        "Lamb",
+        "Davies",
+        "Paren",
+        "Torr",
+        "Pinto"
+      ],
+      "authors_raw": [
+        {
+          "last": "Lamb",
+          "first": "Tom A.",
+          "equal": false
+        },
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        },
+        {
+          "last": "Paren",
+          "first": "Alasdair",
+          "equal": false
+        },
+        {
+          "last": "Torr",
+          "first": "Philip",
+          "equal": false
+        },
+        {
+          "last": "Pinto",
+          "first": "Francesco",
+          "equal": false
+        }
+      ],
+      "year": 2025,
+      "month": 7,
+      "is_workshop": false,
+      "venue": "ICML",
+      "venue_raw": "Forty-second International Conference on Machine Learning",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://openreview.net/forum?id=rbI5mOUA8Z"
+        },
+        {
+          "type": "webpage",
+          "url": "https://tomalamb.github.io/focus-instruction-tuning/"
+        },
+        {
+          "type": "poster",
+          "url": "https://icml.cc/media/PosterPDFs/ICML%202025/43885.png?t=1751877012.2165263"
+        },
+        {
+          "type": "slides",
+          "url": "https://icml.cc/media/icml-2025/Slides/43885_r2yxVZ6.pdf"
+        },
+        {
+          "type": "code",
+          "url": "https://github.com/tomalamb/fit"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "causal",
+          "emoji": "🔨",
+          "label": "causality"
+        },
+        {
+          "id": "ood",
+          "emoji": "🗺️",
+          "label": "out-of-distribution"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "inproceedings",
+      "search": "https://openreview.net/forum?id=rbi5moua8z jul 2025 forty-second international conference on machine learning tom a. lamb and adam davies and alasdair paren and philip torr and francesco pinto focus on this, not that! steering {llm}s with adaptive feature specification icml llms/nlp 🗣️ causality 🔨 out-of-distribution 🗺️"
+    },
+    {
+      "key": "davies2025social",
+      "title": "Social Science Is Necessary for Operationalizing Socially Responsible Foundation Models",
+      "authors": [
+        "Davies",
+        "Nguyen",
+        "Simeone",
+        "Johnston",
+        "Gubri"
+      ],
+      "authors_raw": [
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        },
+        {
+          "last": "Nguyen",
+          "first": "Elisa",
+          "equal": false
+        },
+        {
+          "last": "Simeone",
+          "first": "Michael",
+          "equal": false
+        },
+        {
+          "last": "Johnston",
+          "first": "Erik",
+          "equal": false
+        },
+        {
+          "last": "Gubri",
+          "first": "Martin",
+          "equal": false
+        }
+      ],
+      "year": 2025,
+      "month": 4,
+      "is_workshop": true,
+      "venue": "HAIC @ ICLR 2025",
+      "venue_raw": "ICLR 2025 Workshop on Human-AI Coevolution",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://openreview.net/forum?id=zbB2vjAq7X"
+        },
+        {
+          "type": "poster",
+          "url": "assets/docs/ICLR25/AISS_ICLR_HAIC_poster_2025.pdf"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "socsci",
+          "emoji": "🌐",
+          "label": "social science"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "inproceedings",
+      "search": "https://openreview.net/forum?id=zbb2vjaq7x apr 2025 iclr 2025 workshop on human-ai coevolution adam davies and elisa nguyen and michael simeone and erik johnston and martin gubri social science is necessary for operationalizing socially responsible foundation models haic @ iclr 2025 llms/nlp 🗣️ social science 🌐"
+    },
+    {
+      "key": "mannekote2025simlearners",
+      "title": "Can LLMs Reliably Simulate Human Learner Actions? A Simulation Authoring Framework for Open-Ended Learning Environments",
+      "authors": [
+        "Mannekote",
+        "Davies",
+        "Kang",
+        "Boyer"
+      ],
+      "authors_raw": [
+        {
+          "last": "Mannekote",
+          "first": "Amogh",
+          "equal": false
+        },
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        },
+        {
+          "last": "Kang",
+          "first": "Jina",
+          "equal": false
+        },
+        {
+          "last": "Boyer",
+          "first": "Kristy Elizabeth",
+          "equal": false
+        }
+      ],
+      "year": 2025,
+      "month": 3,
+      "is_workshop": false,
+      "venue": "AAAI",
+      "venue_raw": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://eaai-conf.github.io/year/eaai-25.html"
+        },
+        {
+          "type": "code",
+          "url": "https://github.com/msamogh/hypmix"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "sim",
+          "emoji": "🎭",
+          "label": "simulation"
+        },
+        {
+          "id": "edu",
+          "emoji": "🎓",
+          "label": "AI for education"
+        },
+        {
+          "id": "eval",
+          "emoji": "📏",
+          "label": "evaluation + benchmarking"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "inproceedings",
+      "search": "https://eaai-conf.github.io/year/eaai-25.html mar 2025 proceedings of the aaai conference on artificial intelligence mannekote, amogh and davies, adam and kang, jina and boyer, kristy elizabeth can {llms} reliably simulate human learner actions? {a} simulation authoring framework for open-ended learning environments aaai llms/nlp 🗣️ simulation 🎭 ai for education 🎓 evaluation + benchmarking 📏"
+    },
+    {
+      "key": "hemmat2024illusionbench",
+      "title": "Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models",
+      "authors": [
+        "Hemmat",
+        "Davies",
+        "Lamb",
+        "Yuan",
+        "Torr",
+        "Khakzar",
+        "Pinto"
+      ],
+      "authors_raw": [
+        {
+          "last": "Hemmat",
+          "first": "Arshia",
+          "equal": false
+        },
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        },
+        {
+          "last": "Lamb",
+          "first": "Tom A.",
+          "equal": false
+        },
+        {
+          "last": "Yuan",
+          "first": "Jianhao",
+          "equal": false
+        },
+        {
+          "last": "Torr",
+          "first": "Philip",
+          "equal": false
+        },
+        {
+          "last": "Khakzar",
+          "first": "Ashkan",
+          "equal": false
+        },
+        {
+          "last": "Pinto",
+          "first": "Francesco",
+          "equal": false
+        }
+      ],
+      "year": 2024,
+      "month": 12,
+      "is_workshop": false,
+      "venue": "NeurIPS",
+      "venue_raw": "Advances in Neural Information Processing Systems",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/a13ff984831deea39e6132bafdfdd6d5-Paper-Datasets_and_Benchmarks_Track.pdf"
+        },
+        {
+          "type": "webpage",
+          "url": "https://arshiahemmat.github.io/illusionbench/"
+        },
+        {
+          "type": "poster",
+          "url": "https://neurips.cc/media/neurips-2024/Slides/97667_BKoEec6.pdf"
+        },
+        {
+          "type": "dataset",
+          "url": "https://huggingface.co/datasets/arshiahemmat/IllusionBench"
+        },
+        {
+          "type": "code",
+          "url": "https://github.com/arshiahemmat/IllusionBench_codebase"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "multimodal",
+          "emoji": "👁️",
+          "label": "multimodality"
+        },
+        {
+          "id": "eval",
+          "emoji": "📏",
+          "label": "evaluation + benchmarking"
+        },
+        {
+          "id": "ood",
+          "emoji": "🗺️",
+          "label": "out-of-distribution"
+        },
+        {
+          "id": "synth",
+          "emoji": "🖼️",
+          "label": "synthetic data"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "inproceedings",
+      "search": "2024 dec 37 https://proceedings.neurips.cc/paper_files/paper/2024/file/a13ff984831deea39e6132bafdfdd6d5-paper-datasets_and_benchmarks_track.pdf hidden in plain sight: evaluating abstract shape recognition in vision-language models curran associates, inc. 88527--88556 a. globerson and l. mackey and d. belgrave and a. fan and u. paquet and j. tomczak and c. zhang advances in neural information processing systems hemmat, arshia and davies, adam and lamb, tom a. and yuan, jianhao and torr, philip and khakzar, ashkan and pinto, francesco neurips llms/nlp 🗣️ multimodality 👁️ evaluation + benchmarking 📏 out-of-distribution 🗺️ synthetic data 🖼️"
+    },
+    {
+      "key": "davies2024calm",
+      "title": "Competence-Based Analysis of Language Models",
+      "authors": [
+        "Davies",
+        "Jiang",
+        "Zhai"
+      ],
+      "authors_raw": [
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        },
+        {
+          "last": "Jiang",
+          "first": "Jize",
+          "equal": false
+        },
+        {
+          "last": "Zhai",
+          "first": "ChengXiang",
+          "equal": false
+        }
+      ],
+      "year": 2024,
+      "month": 12,
+      "is_workshop": true,
+      "venue": "IAI @ NeurIPS 2024",
+      "venue_raw": "NeurIPS 2024 Workshop on Interpretable AI",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://openreview.net/forum?id=x6ZM5Is2Po"
+        },
+        {
+          "type": "poster",
+          "url": "assets/docs/NeurIPS24/IAI_CALM_poster.pdf"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "mechinterp",
+          "emoji": "🔎",
+          "label": "(mechanistic) interpretability"
+        },
+        {
+          "id": "theory",
+          "emoji": "💭",
+          "label": "theory"
+        },
+        {
+          "id": "causal",
+          "emoji": "🔨",
+          "label": "causality"
+        },
+        {
+          "id": "cogsci",
+          "emoji": "🧠",
+          "label": "cognitive science"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "inproceedings",
+      "search": "https://openreview.net/forum?id=x6zm5is2po dec 2024 neurips 2024 workshop on interpretable ai davies, adam and jiang, jize and zhai, chengxiang competence-based analysis of language models iai @ neurips 2024 llms/nlp 🗣️ (mechanistic) interpretability 🔎 theory 💭 causality 🔨 cognitive science 🧠"
+    },
+    {
+      "key": "canby2024measuring",
+      "title": "Measuring the reliability of causal probing methods: Tradeoffs, limitations, and the plight of nullifying interventions",
+      "authors": [
+        "Canby*",
+        "Davies*",
+        "Rastogi",
+        "Hockenmaier"
+      ],
+      "authors_raw": [
+        {
+          "last": "Canby",
+          "first": "Marc",
+          "equal": true
+        },
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": true
+        },
+        {
+          "last": "Rastogi",
+          "first": "Chirag",
+          "equal": false
+        },
+        {
+          "last": "Hockenmaier",
+          "first": "Julia",
+          "equal": false
+        }
+      ],
+      "year": 2024,
+      "month": 12,
+      "is_workshop": true,
+      "venue": "IAI @ NeurIPS 2024",
+      "venue_raw": "NeurIPS 2024 Workshop on Interpretable AI",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://openreview.net/forum?id=tmpMQLxVHh"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "mechinterp",
+          "emoji": "🔎",
+          "label": "(mechanistic) interpretability"
+        },
+        {
+          "id": "eval",
+          "emoji": "📏",
+          "label": "evaluation + benchmarking"
+        },
+        {
+          "id": "theory",
+          "emoji": "💭",
+          "label": "theory"
+        }
+      ],
+      "notes": "",
+      "section": "hidden",
+      "type": "inproceedings",
+      "search": "https://openreview.net/forum?id=tmpmqlxvhh dec 2024 neurips 2024 workshop on interpretable ai canby{*}, marc and davies{*}, adam and rastogi, chirag and hockenmaier, julia measuring the reliability of causal probing methods: tradeoffs, limitations, and the plight of nullifying interventions iai @ neurips 2024 llms/nlp 🗣️ (mechanistic) interpretability 🔎 evaluation + benchmarking 📏 theory 💭"
+    },
+    {
+      "key": "mannekote2024wholelearner",
+      "title": "Large language models for whole-learner support: opportunities and challenges",
+      "authors": [
+        "Mannekote",
+        "Davies",
+        "Pinto",
+        "Zhang",
+        "Olds",
+        "Schroeder",
+        "Lehman",
+        "Zapata-Rivera",
+        "Zhai"
+      ],
+      "authors_raw": [
+        {
+          "last": "Mannekote",
+          "first": "Amogh",
+          "equal": false
+        },
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        },
+        {
+          "last": "Pinto",
+          "first": "Juan D",
+          "equal": false
+        },
+        {
+          "last": "Zhang",
+          "first": "Shan",
+          "equal": false
+        },
+        {
+          "last": "Olds",
+          "first": "Daniel",
+          "equal": false
+        },
+        {
+          "last": "Schroeder",
+          "first": "Noah L",
+          "equal": false
+        },
+        {
+          "last": "Lehman",
+          "first": "Blair",
+          "equal": false
+        },
+        {
+          "last": "Zapata-Rivera",
+          "first": "Diego",
+          "equal": false
+        },
+        {
+          "last": "Zhai",
+          "first": "ChengXiang",
+          "equal": false
+        }
+      ],
+      "year": 2024,
+      "month": 10,
+      "is_workshop": false,
+      "venue": "Frontiers in AI",
+      "venue_raw": "Frontiers in Artificial Intelligence",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2024.1460364/full"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "edu",
+          "emoji": "🎓",
+          "label": "AI for education"
+        },
+        {
+          "id": "socsci",
+          "emoji": "🌐",
+          "label": "social science"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "article",
+      "search": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2024.1460364/full frontiers media sa oct 2024 1460364 7 frontiers in artificial intelligence mannekote, amogh and davies, adam and pinto, juan d and zhang, shan and olds, daniel and schroeder, noah l and lehman, blair and zapata-rivera, diego and zhai, chengxiang large language models for whole-learner support: opportunities and challenges frontiers in ai llms/nlp 🗣️ ai for education 🎓 social science 🌐"
+    },
+    {
+      "key": "davies2024cognitive",
+      "title": "The cognitive revolution in interpretability: From explaining behavior to interpreting representations and algorithms",
+      "authors": [
+        "Davies",
+        "Khakzar"
+      ],
+      "authors_raw": [
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        },
+        {
+          "last": "Khakzar",
+          "first": "Ashkan",
+          "equal": false
+        }
+      ],
+      "year": 2024,
+      "month": 8,
+      "is_workshop": false,
+      "venue": "arXiv",
+      "venue_raw": "arXiv preprint arXiv:2408.05859",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://arxiv.org/abs/2408.05859"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "cogsci",
+          "emoji": "🧠",
+          "label": "cognitive science"
+        },
+        {
+          "id": "mechinterp",
+          "emoji": "🔎",
+          "label": "(mechanistic) interpretability"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "article",
+      "search": "https://arxiv.org/abs/2408.05859 aug 2024 arxiv preprint arxiv:2408.05859 davies, adam and khakzar, ashkan the cognitive revolution in interpretability: from explaining behavior to interpreting representations and algorithms arxiv llms/nlp 🗣️ cognitive science 🧠 (mechanistic) interpretability 🔎"
+    },
+    {
+      "key": "yuan2024njpp",
+      "title": "Not Just Pretty Pictures: Toward Interventional Data Augmentation Using Text-to-Image Generators",
+      "authors": [
+        "Yuan*",
+        "Pinto*",
+        "Davies*",
+        "Torr"
+      ],
+      "authors_raw": [
+        {
+          "last": "Yuan",
+          "first": "Jianhao",
+          "equal": true
+        },
+        {
+          "last": "Pinto",
+          "first": "Francesco",
+          "equal": true
+        },
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": true
+        },
+        {
+          "last": "Torr",
+          "first": "Philip",
+          "equal": false
+        }
+      ],
+      "year": 2024,
+      "month": 7,
+      "is_workshop": false,
+      "venue": "ICML",
+      "venue_raw": "Proceedings of the 41st International Conference on Machine Learning",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://proceedings.mlr.press/v235/yuan24e.html"
+        },
+        {
+          "type": "webpage",
+          "url": "https://torrvision.com/njpp/"
+        },
+        {
+          "type": "poster",
+          "url": "https://icml.cc/media/PosterPDFs/ICML%202024/33652.png?t=1720142495.262929"
+        },
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=19bBFg5wJ3Y"
+        },
+        {
+          "type": "code",
+          "url": "https://github.com/YuanJianhao508/NotJustPrettyPictures"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "synth",
+          "emoji": "🖼️",
+          "label": "synthetic data"
+        },
+        {
+          "id": "causal",
+          "emoji": "🔨",
+          "label": "causality"
+        },
+        {
+          "id": "ood",
+          "emoji": "🗺️",
+          "label": "out-of-distribution"
+        },
+        {
+          "id": "multimodal",
+          "emoji": "👁️",
+          "label": "multimodality"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "inproceedings",
+      "search": "https://proceedings.mlr.press/v235/yuan24e.html https://raw.githubusercontent.com/mlresearch/v235/main/assets/yuan24e/yuan24e.pdf pmlr 21--27 jul proceedings of machine learning research 235 salakhutdinov, ruslan and kolter, zico and heller, katherine and weller, adrian and oliver, nuria and scarlett, jonathan and berkenkamp, felix 2024 57924--57952 proceedings of the 41st international conference on machine learning yuan{*}, jianhao and pinto{*}, francesco and davies{*}, adam and torr, philip not just pretty pictures: toward interventional data augmentation using text-to-image generators icml llms/nlp 🗣️ synthetic data 🖼️ causality 🔨 out-of-distribution 🗺️ multimodality 👁️"
+    },
+    {
+      "key": "zhang2024judel2",
+      "title": "Understanding the social construction of juvenile delinquency: insights from semantic analysis of big-data historical newspaper collections",
+      "authors": [
+        "Zhang",
+        "Davies",
+        "Zhai"
+      ],
+      "authors_raw": [
+        {
+          "last": "Zhang",
+          "first": "Yu",
+          "equal": false
+        },
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        },
+        {
+          "last": "Zhai",
+          "first": "ChengXiang",
+          "equal": false
+        }
+      ],
+      "year": 2024,
+      "month": 5,
+      "is_workshop": false,
+      "venue": "JCSS",
+      "venue_raw": "Journal of Computational Social Science",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://link.springer.com/article/10.1007/s42001-024-00254-x"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "socsci",
+          "emoji": "🌐",
+          "label": "social science"
+        },
+        {
+          "id": "datasci",
+          "emoji": "📊",
+          "label": "data science"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "article",
+      "search": "https://link.springer.com/article/10.1007/s42001-024-00254-x springer may 2024 1--43 journal of computational social science zhang, yu and davies, adam and zhai, chengxiang understanding the social construction of juvenile delinquency: insights from semantic analysis of big-data historical newspaper collections jcss llms/nlp 🗣️ social science 🌐 data science 📊"
+    },
+    {
+      "key": "satheesan2022judel",
+      "title": "Toward a big data analysis system for historical newspaper collections research",
+      "authors": [
+        "Satheesan",
+        "Davies",
+        "Craig",
+        "Zhang",
+        "Zhai"
+      ],
+      "authors_raw": [
+        {
+          "last": "Satheesan",
+          "first": "Sandeep Puthanveetil",
+          "equal": false
+        },
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        },
+        {
+          "last": "Craig",
+          "first": "Alan B",
+          "equal": false
+        },
+        {
+          "last": "Zhang",
+          "first": "Yu",
+          "equal": false
+        },
+        {
+          "last": "Zhai",
+          "first": "ChengXiang",
+          "equal": false
+        }
+      ],
+      "year": 2022,
+      "month": 6,
+      "is_workshop": false,
+      "venue": "PASC",
+      "venue_raw": "Proceedings of the Platform for Advanced Scientific Computing Conference",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://doi.org/10.1145/3539781.3539795"
+        },
+        {
+          "type": "slides",
+          "url": "assets/docs/PASC22/slides.pdf"
+        },
+        {
+          "type": "video",
+          "url": "https://player.vimeo.com/video/724457511?app_id=122963&h=015bc4614c&referrer=https%3A%2F%2Fpasc22.e-event.ch%2F#t=33m15s"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "socsci",
+          "emoji": "🌐",
+          "label": "social science"
+        },
+        {
+          "id": "datasci",
+          "emoji": "📊",
+          "label": "data science"
+        }
+      ],
+      "notes": "",
+      "section": "shown",
+      "type": "inproceedings",
+      "search": "https://doi.org/10.1145/3539781.3539795 jun 2022 1--11 proceedings of the platform for advanced scientific computing conference satheesan, sandeep puthanveetil and davies, adam and craig, alan b and zhang, yu and zhai, chengxiang toward a big data analysis system for historical newspaper collections research pasc llms/nlp 🗣️ social science 🌐 data science 📊"
+    },
+    {
+      "key": "davies2021thesis",
+      "title": "Definitional Templating: A Novel Approach to Modeling the Compositional Semantics of Noun Compounds",
+      "authors": [
+        "Davies"
+      ],
+      "authors_raw": [
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        }
+      ],
+      "year": 2021,
+      "month": 5,
+      "is_workshop": false,
+      "venue": "University of Utah",
+      "venue_raw": "University of Utah",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://www.cs.utah.edu/docs/techreports/2021/PDF/UUCS-21-013.pdf"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        }
+      ],
+      "notes": "",
+      "section": "hidden",
+      "type": "techreport",
+      "search": "https://www.cs.utah.edu/docs/techreports/2021/pdf/uucs-21-013.pdf may 2021 university of utah davies, adam definitional templating: a novel approach to modeling the compositional semantics of noun compounds university of utah llms/nlp 🗣️"
+    }
+  ]
+}

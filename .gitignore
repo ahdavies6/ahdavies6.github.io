@@ -3,3 +3,10 @@ _site
 .jekyll-metadata
 Gemfile.lock
 .DS_Store
+
+# publications build env (uv) — keep pyproject.toml + uv.lock, ignore the venv
+_pubs/.venv/
+_pubs/__pycache__/
+__pycache__/
+.python-version
+vendor

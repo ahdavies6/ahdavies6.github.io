@@ -1,0 +1,158 @@
+# =============================================================================
+# Publications sidecar metadata.
+#
+# The .bib file (publications.bib) is the GROUND TRUTH. It is parsed exactly
+# as-is: authors, title, year, venue string, and paper url all come from there.
+# This file adds ONLY the things bibtex does not hold:
+#   - venue_aliases: map long venue strings -> compact display names
+#   - tags:          topical tags per paper (citekey -> [tag, ...])
+#   - links:         EXTRA links per paper (poster/slides/code/webpage/video...)
+#                    the "paper" link is taken from the bib `url`/`pdf` field.
+#   - notes:         optional free-text note shown under an entry
+#                    (e.g. "originally presented at IAI @ NeurIPS 2024 (Oral)")
+#   - section:       optional grouping ("published" default, or "preprint")
+#
+# Nothing here overrides bibtex. If it's in the bib, don't repeat it here.
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# Tag legend: defines the emoji + human label for every tag id used below.
+# The widget renders these as clickable chips (emoji + label) and filters on them.
+# ---------------------------------------------------------------------------
+tag_legend:
+  all:          { emoji: "🗣️", label: "LLMs/NLP" }
+  mechinterp:   { emoji: "🔎", label: "(mechanistic) interpretability" }
+  causal:       { emoji: "🔨", label: "causality" }
+  ood:          { emoji: "🗺️", label: "out-of-distribution" }
+  eval:         { emoji: "📏", label: "evaluation + benchmarking" }
+  multimodal:   { emoji: "👁️", label: "multimodality" }
+  sim:          { emoji: "🎭", label: "simulation" }
+  edu:          { emoji: "🎓", label: "AI for education" }
+  cogsci:       { emoji: "🧠", label: "cognitive science" }
+  socsci:       { emoji: "🌐", label: "social science" }
+  datasci:      { emoji: "📊", label: "data science" }
+  synth:        { emoji: "🖼️", label: "synthetic data" }
+  theory:       { emoji: "💭", label: "theory" }
+
+# ---------------------------------------------------------------------------
+# Venue aliases: map the (long) venue string from the bib to a compact label.
+# Matching is done on the resolved venue string (booktitle/journal). Both exact
+# strings and case-insensitive substring keys are supported (see build script).
+# Value is the compact display label.
+# ---------------------------------------------------------------------------
+venue_aliases:
+  # conferences
+  "Neural Information Processing Systems": "NeurIPS"
+  "International Conference on Machine Learning": "ICML"
+  "AAAI": "AAAI"
+  "Conference on Language Modeling": "COLM"
+  "Platform for Advanced Scientific Computing": "PASC"
+  "International Joint Conference on Natural Language Processing": "IJCNLP-AACL"
+
+  # journals
+  "Journal of Artificial Intelligence Research": "JAIR"
+  "Frontiers in Artificial Intelligence": "Frontiers in AI"
+  "Journal of Computational Social Science": "JCSS"
+
+  # workshops (1-off matches)
+  "NeurIPS 2024 Workshop on Interpretable AI": "IAI @ NeurIPS 2024"
+  "ICLR 2025 Workshop on Human-AI Coevolution": "HAIC @ ICLR 2025"
+  "First Workshop on Social Simulation with LLMs": "SocialSim @ COLM 2025"
+
+  # preprints
+  "arXiv": "arXiv"
+
+  # dissertation
+  "University of Illinois Urbana-Champaign": "Dissertation (UIUC)"
+
+# ---------------------------------------------------------------------------
+# Per-paper metadata, keyed by bibtex citekey.
+#   tags:    list of tag ids (must exist in tag_legend)
+#   links:   list of {type, url}; `type` maps to an icon in the widget config.
+#            (the primary paper link is auto-added from the bib url/pdf)
+#   notes:   optional string shown under the row
+#   section: "published" (default) | "preprint"
+# ---------------------------------------------------------------------------
+papers:
+  davies2026interpreting:
+    tags: [all, mechinterp, cogsci, causal, ood, theory, eval, synth]
+
+  canby2025how:
+    tags: [all, mechinterp, eval, theory]
+    # notes: "Originally presented at IAI @ NeurIPS 2024 (Oral)."
+    links:
+      - { type: slides, url: "assets/docs/NeurIPS24/IAI_CPR_talk.pdf" }
+      - { type: poster, url: "assets/docs/NeurIPS24/IAI_CPR_poster.pdf" }
+
+  smolensky2025mechanisms:
+    tags: [all, cogsci, mechinterp, theory]
+
+  lee2025evaluating:
+    tags: [all, mechinterp, theory, eval]
+
+  mannekote2025role:
+    tags: [all, sim, socsci, eval]
+
+  lamb2025focus:
+    tags: [all, causal, ood]
+    links:
+      - { type: webpage, url: "https://tomalamb.github.io/focus-instruction-tuning/" }
+      - { type: poster,  url: "https://icml.cc/media/PosterPDFs/ICML%202025/43885.png?t=1751877012.2165263" }
+      - { type: slides,  url: "https://icml.cc/media/icml-2025/Slides/43885_r2yxVZ6.pdf" }
+      - { type: code,    url: "https://github.com/tomalamb/fit" }
+
+  davies2025social:
+    tags: [all, socsci]
+    links:
+      - { type: poster, url: "assets/docs/ICLR25/AISS_ICLR_HAIC_poster_2025.pdf" }
+
+  mannekote2025simlearners:
+    tags: [all, sim, edu, eval]
+    links:
+      - { type: code, url: "https://github.com/msamogh/hypmix" }
+
+  hemmat2024illusionbench:
+    tags: [all, multimodal, eval, ood, synth]
+    links:
+      - { type: webpage, url: "https://arshiahemmat.github.io/illusionbench/" }
+      - { type: poster,  url: "https://neurips.cc/media/neurips-2024/Slides/97667_BKoEec6.pdf" }
+      - { type: dataset, url: "https://huggingface.co/datasets/arshiahemmat/IllusionBench" }
+      - { type: code,    url: "https://github.com/arshiahemmat/IllusionBench_codebase" }
+
+  davies2024calm:
+    tags: [all, mechinterp, theory, causal, cogsci]
+    links:
+      - { type: poster, url: "assets/docs/NeurIPS24/IAI_CALM_poster.pdf" }
+
+  mannekote2024wholelearner:
+    tags: [all, edu, socsci]
+
+  yuan2024njpp:
+    tags: [all, synth, causal, ood, multimodal]
+    links:
+      - { type: webpage, url: "https://torrvision.com/njpp/" }
+      - { type: poster,  url: "https://icml.cc/media/PosterPDFs/ICML%202024/33652.png?t=1720142495.262929" }
+      - { type: video,   url: "https://www.youtube.com/watch?v=19bBFg5wJ3Y" }
+      - { type: code,    url: "https://github.com/YuanJianhao508/NotJustPrettyPictures" }
+
+  zhang2024judel2:
+    tags: [all, socsci, datasci]
+
+  satheesan2022judel:
+    tags: [all, socsci, datasci]
+    links:
+      - { type: slides, url: "assets/docs/PASC22/slides.pdf" }
+      - { type: video,  url: "https://player.vimeo.com/video/724457511?app_id=122963&h=015bc4614c&referrer=https%3A%2F%2Fpasc22.e-event.ch%2F#t=33m15s" }
+
+  # ---- preprints ----
+  davies2024cognitive:
+    tags: [all, cogsci, mechinterp]
+
+  # ---- older workshop version, hidden by default (superseded by canby2025how) ----
+  canby2024measuring:
+    section: hidden
+    tags: [all, mechinterp, eval, theory]
+
+  davies2021thesis:
+    section: hidden
+    tags: [all]

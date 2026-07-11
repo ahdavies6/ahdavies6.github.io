@@ -18,8 +18,7 @@ title: Adam Davies
 masthead_title: ""
 title_separator: "|"
 email: adavies4@illinois.edu
-description: "Adam Davies, CS PhD student @ UIUC."
-twitter_username: adamdaviesnlp
+# twitter_username: adamdaviesnlp
 # github_username: ahdavies6
 linkedin_username: adamhdavies
 minimal_mistakes_skin: dark
@@ -40,17 +39,22 @@ github: [metadata]
 include:
   - _pages
 
-# # Exclude from processing.
-# # The following items will not be processed, by default. Create a custom list
-# # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Exclude from processing / file-watching. Must keep the Jekyll defaults
+# (vendor/*, node_modules, Gemfile*) or the build/serve will choke on the gems;
+# _pubs/ is added so the file-watcher does not recurse into the Python .venv
+# (its recursive symlinks crash the `listen` gem: "already being watched").
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - _pubs/
 
 # Plugins (previously gems:)
 plugins:
@@ -67,7 +71,7 @@ author:
   name      : "Adam Davies"
   pronouns  : "he/they"
   avatar    : "/assets/images/me.jpg"
-  bio       : "Senior Applied Scientist @ Microsoft<br>(PhD @ UIUC, 2026)<br><small>AI interpretability, cognitive science, OOD generalization</small>"
+  bio       : "Senior Applied Scientist @ Microsoft<br>(PhD @ UIUC, 2026)<br><small>NLP, (mechanistic) interpretability, cognitive science, OOD generalization</small>"
   uri       : "https://ahdavies6.github.io/"
   email     : adamdavies@microsoft.com
   linkedin  : adamhdavies
@@ -84,9 +88,9 @@ author:
     - label: "CV"
       icon: "fas fa-fw fa-file"
       url: "/assets/docs/2025_Fall_CV.pdf"
-    # - label: "ORCID"
-    #   icon: "ai ai-orcid"
-    #   url: "https://orcid.org/0000-0002-0610-2732"
+    # - label : "ORCID"
+    #   icon  : "ai ai-orcid"
+    #   url   : "https://orcid.org/0000-0002-0610-2732"
 
 # footer:
 #   links:

@@ -1,0 +1,222 @@
+/* Publications table widget. Inherits the theme's font + colors everywhere so
+ * it never clashes with the active skin (works on light or dark). */
+
+/* full-bleed: let the table use the whole article width (kill right padding) */
+.page { padding-right: 0 !important; }
+
+#pubs {
+  /* a border tint that reads on both light and dark skins */
+  --pub-line: rgba(128, 128, 128, 0.35);
+  font-size: 0.75em;              /* match .sidebar p */
+  margin-top: 0.5em;
+  width: 100%;
+  color: inherit;
+}
+
+/* ---- controls ---- */
+#pubs .pub-controls {
+  display: flex;
+  align-items: stretch;            /* every control shares the tallest height */
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+/* one shared box model so the dropdown, search box, and Clear line up exactly */
+#pubs .pub-ms-btn,
+#pubs .pub-search,
+#pubs .pub-reset {
+  height: 2.6em;
+  box-sizing: border-box;
+  padding: 0 0.7rem;
+  border: 1px solid var(--pub-line);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 1em;
+  line-height: 1.4;
+}
+#pubs .pub-search {
+  flex: 1 1 260px;
+  min-width: 200px;
+  -webkit-appearance: none;        /* kill the taller default search-input chrome */
+  appearance: none;
+}
+#pubs .pub-reset { cursor: pointer; display: inline-flex; align-items: center; }
+#pubs .pub-reset:hover { border-color: currentColor; }
+#pubs .pub-count {
+  opacity: 0.7;
+  font-size: 0.9em;
+  margin-left: auto;
+  align-self: center;              /* vertically center on the control row */
+  line-height: 1;                  /* kill inherited leading so centering hits the glyphs */
+}
+
+/* ---- topics legend/key (clickable; syncs with the dropdown) ---- */
+#pubs .pub-legend {
+  margin-bottom: 0.9rem;
+  line-height: 1.8;
+  color: inherit;
+}
+#pubs .pub-legend-label { font-weight: 700; }
+#pubs .pub-legend-item {
+  white-space: nowrap;
+  cursor: pointer;
+}
+#pubs .pub-legend-item:hover { text-decoration: underline; }
+#pubs .pub-legend-item.active { font-weight: 700; text-decoration: underline; }
+
+/* ---- topics multi-select (checkbox popover) ---- */
+#pubs .pub-ms { position: relative; display: inline-block; }
+#pubs .pub-ms-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+#pubs .pub-ms-btn:hover { border-color: currentColor; }
+#pubs .pub-ms-chev { opacity: 0.7; font-size: 0.8em; }
+#pubs .pub-ms.open .pub-ms-chev { transform: rotate(180deg); }
+#pubs .pub-ms-pop {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 240px;
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 0.35rem;
+  border: 1px solid var(--pub-line);
+  border-radius: 8px;
+  background: var(--pub-pop-bg, #1b1f24);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+#pubs .pub-ms.open .pub-ms-pop { display: block; }
+#pubs .pub-ms-tools {
+  display: flex;
+  gap: 1rem;
+  padding: 0.25rem 0.4rem 0.5rem;
+  border-bottom: 1px solid var(--pub-line);
+  margin-bottom: 0.3rem;
+}
+#pubs .pub-ms-tool { cursor: pointer; text-decoration: underline; font-size: 0.9em; }
+#pubs .pub-ms-opt {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.28rem 0.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+#pubs .pub-ms-opt:hover { background: rgba(128, 128, 128, 0.15); }
+#pubs .pub-ms-opt input { margin: 0; cursor: pointer; }
+#pubs .pub-ms-opt-label { flex: 1 1 auto; }
+#pubs .pub-ms-n { opacity: 0.6; font-size: 0.85em; }
+
+/* ---- table ---- */
+#pubs .pub-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;            /* colgroup %s scale with the window width */
+  color: inherit;
+  font: inherit;
+}
+#pubs .pub-table th,
+#pubs .pub-table td {
+  text-align: left;
+  padding: 0.5rem 0.55rem;
+  border-bottom: 1px solid var(--pub-line);
+  vertical-align: top;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  color: inherit;
+}
+#pubs .pub-table thead th {
+  border-bottom: 2px solid var(--pub-line);
+  font-weight: 700;
+  white-space: nowrap;
+  position: relative;               /* anchor the drag handle */
+}
+
+/* ---- drag-to-resize handles on column borders ---- */
+#pubs .pub-resizer {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  width: 9px;
+  height: 100%;
+  cursor: col-resize;
+  user-select: none;
+  z-index: 2;
+}
+#pubs .pub-resizer::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 4px;
+  width: 2px;
+  height: 60%;
+  background: var(--pub-line);
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+#pubs .pub-resizer:hover::after { opacity: 1; }
+body.pub-resizing { cursor: col-resize; user-select: none; }
+body.pub-resizing #pubs .pub-resizer::after { opacity: 1; }
+
+#pubs .pub-title-text { font-weight: 600; }
+#pubs .pub-year { white-space: nowrap; opacity: 0.75; }
+#pubs .pub-venue { font-weight: 600; }
+#pubs .pub-topics { white-space: normal; }
+#pubs .pub-topic-emojis { font-size: 1.1em; }
+#pubs .pub-topic-emoji { display: inline-block; margin-right: 0.3em; cursor: pointer; }
+#pubs .pub-note {
+  opacity: 0.7;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 0.2rem;
+}
+/* equal-contribution note under authors: <small>, italic, muted like .pub-count */
+#pubs .pub-equal-note {
+  opacity: 0.7;
+  font-style: italic;
+  margin-top: 0.15rem;
+}
+
+/* ---- link icons: inherit the theme's link color, no custom accent.
+   Sized/spaced to match the topic emojis so both columns read the same. ---- */
+#pubs .pub-links { white-space: normal; }
+#pubs .pub-link {
+  display: inline-block;
+  margin-right: 0.3em;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+#pubs .pub-empty,
+#pubs .pub-error { opacity: 0.7; font-style: italic; padding: 1rem 0; }
+
+/* ---- responsive: collapse to stacked cards on narrow screens ---- */
+@media (max-width: 700px) {
+  #pubs .pub-table,
+  #pubs .pub-table colgroup,
+  #pubs .pub-table col,
+  #pubs .pub-table thead,
+  #pubs .pub-table tbody,
+  #pubs .pub-table th,
+  #pubs .pub-table td,
+  #pubs .pub-table tr { display: block; width: auto; }
+  #pubs .pub-table thead { display: none; }
+  #pubs .pub-row {
+    border: 1px solid var(--pub-line);
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+  #pubs .pub-table td { border: none; padding: 0.2rem 0; }
+  #pubs .pub-venue::before { content: "📍 "; }
+  #pubs .pub-year::before { content: "📅 "; }
+}

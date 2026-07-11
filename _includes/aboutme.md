@@ -11,9 +11,9 @@
   }
 </style>
 
-Hello there! 👋 I'm Adam, a Senior Applied Scientist at Microsoft's [IDEAS Research team](https://www.microsoft.com/en-us/research/group/ideas-research/), working at the intersection of NLP, (mechanistic) interpretability, cognitive science, OOD generalization, and causal machine learning to study how AI models "think". I graduated in May 2026 from [UIUC](https://illinois.edu/) with my [PhD in CS](https://siebelschool.illinois.edu/).
+Hi there! 👋 I'm Adam, a Senior Applied Scientist at Microsoft's [IDEAS Research team](https://www.microsoft.com/en-us/research/group/ideas-research/), and recently (May 2026) graduated from [UIUC](https://illinois.edu/) with my [PhD in CS](https://siebelschool.illinois.edu/).
 
-My research vision is to help build the foundations of a **[cognitive science of AI](https://arxiv.org/abs/2408.05859)**, studying how foundation models like LLMs learn, represent, and process information. 
+I study how AI models "think", working at the intersection of NLP, (mechanistic) interpretability, cognitive science, OOD generalization, and causal machine learning to understand internal representations and processes that drive AI behaviors. My research vision is to help build the foundations of a **<a href="{% link assets/docs/dissertation.pdf %}#page=13" target="_blank" rel="noopener">cognitive science of AI</a>**, studying how foundation models like LLMs learn, represent, and process information. 
 [My work]({% link _pages/publications.md %}) focuses on how we can <ins>interpret and control the features learned and leveraged by these models,</ins> including <ins>how they are used in performing various tasks,</ins> and how to apply such knowledge/methods to <ins>predict and improve models' generalization to novel contexts.</ins> 
 <!-- My current research intersects primarily with *NLP, (mechanistic) interpretability, cognitive science, OOD generalization, and causal machine learning;* but I also have ongoing collaborations in the areas of *synthetic data, multimodal representation learning, computational social science, and AI for education.* -->
 
