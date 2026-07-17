@@ -74,8 +74,8 @@
   function setAllTopics(v) {
     STATE.allTags.forEach(function (id) { STATE.activeTags[id] = v; });
   }
-  // Shared toggle used by the legend AND the table emojis, so both stay in
-  // lockstep:
+  // Shared toggle used by the legend, the table emojis, AND the dropdown, so
+  // all three stay in lockstep:
   //   - from the neutral all-selected state, toggling one isolates it;
   //   - toggling off the last remaining topic reverts to all-selected;
   //   - otherwise it's a plain add/remove (OR filter).
@@ -92,14 +92,20 @@
       STATE.activeTags[id] = true;
     }
   }
-  // Reflect STATE.activeTags into the legend (active class). Called on every
-  // render so the legend + table emojis stay in sync.
+  // Reflect STATE.activeTags into the legend (active class) and the dropdown
+  // (checkboxes + caption). Called on every render so everything auto-syncs.
   function syncTopics(root) {
     var full = topicsFull();
     root.querySelectorAll(".pub-legend-item").forEach(function (item) {
       var id = item.getAttribute("data-tag");
       item.classList.toggle("active", !full && !!STATE.activeTags[id]);
     });
+    root.querySelectorAll(".pub-ms-opt input").forEach(function (b) {
+      b.checked = !!STATE.activeTags[b.getAttribute("data-tag")];
+    });
+    var n = STATE.allTags.filter(function (id) { return STATE.activeTags[id]; }).length;
+    var cap = root.querySelector(".pub-ms-cap");
+    if (cap) cap.textContent = "topics: " + (n === STATE.allTags.length ? "all" : (n + " selected"));
   }
 
   function matches(entry) {
@@ -179,7 +185,7 @@
       tr.appendChild(tdAuth);
 
       // Topics: emojis only (labels are decoded in the legend above the table).
-      // Each emoji is clickable (same toggle mechanics as the legend) and
+      // Each emoji is clickable (same toggle mechanics as legend + dropdown) and
       // carries its own tooltip with just that topic's label.
       var tdTags = el("td", "pub-topics");
       if (e.tags.length) {
@@ -220,10 +226,62 @@
       : shown + " of " + total + " publications";
   }
 
+  // Checkbox-popover multi-select for topics (M365-explorer style). Uses the
+  // shared toggleTopic mechanics so it stays in sync with the legend + table.
+  //   - "select all" / "clear" at the top, then each topic (emoji + label +
+  //     count) ordered by count desc.
+  //   - Default: every topic checked = neutral = show all.
+  function buildTopicDropdown(root, order, info, counts) {
+    var wrap = el("div", "pub-ms");
+
+    var btn = el("button", "pub-ms-btn");
+    btn.type = "button";
+    var cap = el("span", "pub-ms-cap", "topics: all");
+    btn.appendChild(cap);
+    btn.appendChild(el("span", "pub-ms-chev", "▾"));
+    wrap.appendChild(btn);
+
+    var pop = el("div", "pub-ms-pop");
+    var tools = el("div", "pub-ms-tools");
+    var selAll = el("a", "pub-ms-tool", "select all");
+    var clr = el("a", "pub-ms-tool", "clear");
+    selAll.setAttribute("role", "button"); selAll.tabIndex = 0;
+    clr.setAttribute("role", "button"); clr.tabIndex = 0;
+    tools.appendChild(selAll);
+    tools.appendChild(clr);
+    pop.appendChild(tools);
+
+    order.forEach(function (id) {
+      var t = info[id];
+      var lab = el("label", "pub-ms-opt");
+      var box = document.createElement("input");
+      box.type = "checkbox";
+      box.setAttribute("data-tag", id);
+      box.addEventListener("change", function () {
+        toggleTopic(id);
+        render(root);
+      });
+      lab.appendChild(box);
+      lab.appendChild(el("span", "pub-ms-opt-label", t.emoji + " " + t.label));
+      lab.appendChild(el("span", "pub-ms-n", String(counts[id])));
+      pop.appendChild(lab);
+    });
+    wrap.appendChild(pop);
+
+    btn.addEventListener("click", function (ev) {
+      ev.stopPropagation();
+      wrap.classList.toggle("open");
+    });
+    pop.addEventListener("click", function (ev) { ev.stopPropagation(); });
+
+    selAll.addEventListener("click", function () { setAllTopics(true); render(root); });
+    clr.addEventListener("click", function () { setAllTopics(false); render(root); });
+
+    return wrap;
+  }
+
   function buildChrome(root) {
-    // controls (single line): search | Clear | count. Topic filtering lives in
-    // the clickable legend above + the table emojis (see OLD_dropdown_ variant
-    // for the multi-select dropdown version).
+    // controls (single line): topics dropdown | search | Clear | count
     var controls = el("div", "pub-controls");
 
     // Tally topic counts over visible papers; order by count desc (then A-Z).
@@ -247,7 +305,7 @@
     setAllTopics(true);
 
     // Legend/key above the controls. Clickable (same toggle mechanics as the
-    // table emojis); stays in sync via syncTopics on every render.
+    // dropdown + table emojis); stays in sync via syncTopics on every render.
     var legend = el("div", "pub-legend");
     legend.appendChild(el("span", "pub-legend-label", "topics: "));
     order.forEach(function (id, i) {
@@ -270,6 +328,8 @@
     });
     root.appendChild(legend);
 
+    controls.appendChild(buildTopicDropdown(root, order, info, counts));
+
     var search = el("input", "pub-search");
     search.type = "search";
     search.placeholder = "Search titles, authors, venues, topics…";
@@ -291,6 +351,12 @@
     controls.appendChild(el("span", "pub-count"));
 
     root.appendChild(controls);
+
+    // close any open dropdown when clicking elsewhere
+    document.addEventListener("click", function () {
+      var open = root.querySelector(".pub-ms.open");
+      if (open) open.classList.remove("open");
+    });
 
     // table
     var table = el("table", "pub-table");
