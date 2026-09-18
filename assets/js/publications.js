@@ -78,7 +78,7 @@
   // lockstep:
   //   - from the neutral all-selected state, toggling one isolates it;
   //   - toggling off the last remaining topic reverts to all-selected;
-  //   - otherwise it's a plain add/remove (OR filter).
+  //   - otherwise it's a plain add/remove (AND filter).
   function toggleTopic(id) {
     if (topicsFull()) {
       setAllTopics(false);
@@ -103,13 +103,18 @@
   }
 
   function matches(entry) {
-    // topic filter: OR over the checked topics. The "all checked" default is
-    // neutral (every visible paper has >=1 tag, so OR-over-all includes all).
+    // topic filter: AND over the checked topics. The "all checked" default
+    // remains neutral.
     // No topic checked = show nothing.
     var anySelected = entry.tags.some(function (t) {
       return STATE.activeTags[t.id];
     });
     if (!anySelected) return false;
+    if (!topicsFull() && !STATE.allTags.every(function (id) {
+      return !STATE.activeTags[id] || entry.tags.some(function (t) {
+        return t.id === id;
+      });
+    })) return false;
     // text query -- match against the full-text blob (every raw bibtex field
     // value + compact venue + tag labels), case-insensitive, all words must hit.
     var q = STATE.query.trim().toLowerCase();

@@ -66,6 +66,12 @@
 #pubs .pub-legend-item:hover { text-decoration: underline; }
 #pubs .pub-legend-item.active { font-weight: 700; text-decoration: underline; }
 
+/* Override the theme's global span transition on topic controls. */
+#pubs .pub-legend-item,
+#pubs .pub-topic-emoji {
+  transition: none;
+}
+
 /* ---- topics multi-select (checkbox popover) ---- */
 #pubs .pub-ms { position: relative; display: inline-block; }
 #pubs .pub-ms-btn {

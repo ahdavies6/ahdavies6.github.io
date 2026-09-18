@@ -11,13 +11,23 @@
   }
 </style>
 
-Hi there! 👋 I'm Adam, a Senior Applied Scientist at Microsoft's [IDEAS Research team](https://www.microsoft.com/en-us/research/group/ideas-research/), and recently (May 2026) graduated from [UIUC](https://illinois.edu/) with my [PhD in CS](https://siebelschool.illinois.edu/).
+Hi there! 👋 I'm Adam, an AI researcher at Microsoft's [IDEAS Research team](https://www.microsoft.com/en-us/research/group/ideas-research/). I recently (in May 2026) graduated from [UIUC](https://illinois.edu/) with my [PhD in CS](https://siebelschool.illinois.edu/).
 
-I study how AI models "think", working at the intersection of NLP, (mechanistic) interpretability, cognitive science, OOD generalization, and causal machine learning to understand internal representations and processes that drive AI behaviors. My research vision is to help build the foundations of a **<a href="{% link assets/docs/dissertation.pdf %}#page=13" target="_blank" rel="noopener">cognitive science of AI</a>**, studying how foundation models like LLMs learn, represent, and process information. 
-[My work]({% link _pages/publications.md %}) focuses on how we can <ins>interpret and control the features learned and leveraged by these models,</ins> including <ins>how they are used in performing various tasks,</ins> and how to apply such knowledge/methods to <ins>predict and improve models' generalization to novel contexts.</ins> 
+My research vision is to help build the foundations of a **<a href="{% link assets/docs/dissertation.pdf %}#page=13" target="_blank" rel="noopener">cognitive science of AI</a>**, studying how foundation models like LLMs learn, represent, and process information. 
+<!-- My work working at the intersection of NLP, (mechanistic) interpretability, and cognitive science, to understand internal representations and processes that drive AI behaviors.  -->
+[My work]({% link _pages/publications.md %}) 
+<!-- how we can <ins>interpret and control the features learned and leveraged by these models,</ins> including <ins>how they are used in performing various tasks,</ins> and how to apply such knowledge/methods to <ins>predict and improve models' generalization to novel contexts.</ins>  -->
+leverages insights from cognitive science to develop new approaches to mechanistic interpretability that can help us better understand machine cognition at scale.
+<!-- [*how machines think*](https://academic.oup.com/mind/article/LIX/236/433/986238). -->
 <!-- My current research intersects primarily with *NLP, (mechanistic) interpretability, cognitive science, OOD generalization, and causal machine learning;* but I also have ongoing collaborations in the areas of *synthetic data, multimodal representation learning, computational social science, and AI for education.* -->
 
-<!-- ## where's Adam?
+My current research agenda is centered around **bidirectional [theory of mind](https://en.wikipedia.org/wiki/Theory_of_mind)** between AI agents and human users -- that is:
+- *How do AI systems internally represent and reason over the mental states of human users?* For instance: when, how, why do they (mis)understand our goals, intentions, or preferences? How can we proactively surface and correct such misunderstandings to promote more productive and safe interactions with AI?
+- *How can we, as human researchers (or everyday users), better understand why AI systems behave the way they do?* What do they (mis)understand about us, our values (individually and societally), and the world? When can(\'t) we trust them to act autonomously on our behalf?
 
-I'm co-advised by Professors [ChengXiang Zhai](http://czhai.cs.illinois.edu/) and [Julia Hockenmaier](https://siebelschool.illinois.edu/about/people/faculty/juliahmr) at [UIUC](https://illinois.edu/), and I work as a research assistant with the [INVITE institute](https://invite.illinois.edu/).
-I also collaborate frequently with the [Torr Vision Group](https://torrvision.com/) at the [University of Oxford](https://www.ox.ac.uk/), and recently (in Summer 2025) completed a research internship with the [Neurocompositional AI team](https://www.microsoft.com/en-us/research/project/neurocompositional-ai/) in the [Deep Learning Group](https://www.microsoft.com/en-us/research/group/deep-learning-group/) at [Microsoft Research](https://www.microsoft.com/en-us/research/). -->
+I'm always open to **collaborate** on relevant topics, **mentor** highly motivated students/interns, or **chat IRL**[^1] about big questions in cognitive science, philosophy, or the current AI research landscape.
+<!-- information about the important research happening in my lab, area, and industry.  -->
+If you're here for any of those reasons, please feel free to reach out to me via email or LinkedIn!
+
+
+[^1]: I live in Seattle :)
