@@ -1,10 +1,32 @@
-/* Publications widget: renders a filterable table from
- * assets/publications.json. Framework-agnostic vanilla JS + Font Awesome /
- * Academicons (both already loaded site-wide). Mount with:
- *   <div id="pubs" data-src="/assets/publications.json"></div>
- *   <script src="/assets/js/publications.js"></script>
- */
-(function () {
+/* Shared publications renderer: build HTML with a supplied document, then attach
+ * browser controls to the saved markup without replacing the table. */
+(function (factory) {
+  if (typeof module === "object" && module.exports) {
+    module.exports = factory;
+    return;
+  }
+  var publications = factory(document);
+  function init() {
+    var root = document.getElementById("pubs");
+    if (!root) return;
+    try {
+      publications.enhance(root);
+    } catch (err) {
+      console.error("Could not initialize publication controls", err);
+      var message = document.createElement("p");
+      message.className = "pub-error";
+      message.setAttribute("role", "alert");
+      message.textContent = "Publication controls are unavailable (" +
+        err.message + "). The publications below are still readable.";
+      root.prepend(message);
+    }
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})(function (document) {
   "use strict";
 
   // link type -> icon. Prefer academicons (ai) for scholarly stuff, else FA.
@@ -30,10 +52,10 @@
            a.first.toLowerCase().charAt(0) === ME.first;
   };
 
-  function el(tag, cls, html) {
+  function el(tag, cls, text) {
     var e = document.createElement(tag);
     if (cls) e.className = cls;
-    if (html != null) e.innerHTML = html;
+    if (text != null) e.textContent = text;
     return e;
   }
 
@@ -56,7 +78,7 @@
       if (entry.abbreviate_authors && i > 1 &&
           i < entry.authors_raw.length - 1 && !YOU_ARE(a)) return;
       if (i > previous + 1) labels.push("...");
-      var label = entry.authors[i];
+      var label = el("span", null, entry.authors[i]).innerHTML;
       labels.push(YOU_ARE(a)
         ? '<strong>' + label + '</strong>'
         : label);
@@ -67,11 +89,10 @@
 
   // ---- global state ----
   // Default column widths (title, year, venue, authors, topics, links).
-  // Columns are drag-resizable in the browser (widths trade with the neighbour,
-  // sum stays 100%); the resized set lives only in STATE.widths for the session.
+  // Columns trade width with their neighbour; filtering preserves the columns.
   var DEFAULT_WIDTHS = ["37.5%", "6%", "13.5%", "23%", "10%", "10%"];
 
-  var STATE = { entries: [], legend: {}, query: "", activeTags: {}, allTags: [], widths: DEFAULT_WIDTHS.slice() };
+  var STATE = { entries: [], rows: [], query: "", activeTags: {}, allTags: [] };
 
   // "Full" = every topic selected = the neutral "show all" state.
   function topicsFull() {
@@ -114,24 +135,19 @@
     // remains neutral.
     // No topic checked = show nothing.
     var anySelected = entry.tags.some(function (t) {
-      return STATE.activeTags[t.id];
+      return STATE.activeTags[t];
     });
     if (!anySelected) return false;
     if (!topicsFull() && !STATE.allTags.every(function (id) {
       return !STATE.activeTags[id] || entry.tags.some(function (t) {
-        return t.id === id;
+        return t === id;
       });
     })) return false;
     // text query -- match against the full-text blob (every raw bibtex field
     // value + compact venue + tag labels), case-insensitive, all words must hit.
     var q = STATE.query.trim().toLowerCase();
     if (!q) return true;
-    var hay = (entry.search || "") + " " +
-              entry.title + " " + entry.venue + " " +
-              entry.authors.join(" ") + " " +
-              entry.tags.map(function (t) { return t.label; }).join(" ");
-    hay = hay.toLowerCase();
-    return q.split(/\s+/).every(function (w) { return hay.indexOf(w) !== -1; });
+    return q.split(/\s+/).every(function (w) { return entry.search.indexOf(w) !== -1; });
   }
 
   // always sorted by year desc, then month desc, then conferences before
@@ -146,7 +162,7 @@
     });
   }
 
-  function render(root) {
+  function buildRows(root) {
     var visible = STATE.entries.filter(function (e) {
       return e.section !== "hidden";
     });
@@ -154,19 +170,15 @@
     var tbody = root.querySelector(".pub-table tbody");
     tbody.innerHTML = "";
 
-    var rows = sortEntries(visible.filter(matches));
-    if (!rows.length) {
-      var tr = el("tr");
-      var td = el("td", "pub-empty");
-      td.colSpan = 6;
-      td.textContent = "No publications match the current filters.";
-      tr.appendChild(td);
-      tbody.appendChild(tr);
-    }
-
+    var rows = sortEntries(visible);
     rows.forEach(function (e) {
       var tr = el("tr");
       tr.className = "pub-row";
+      tr.setAttribute("data-key", e.key);
+      tr.setAttribute("data-tags", JSON.stringify(e.tags.map(function (t) { return t.id; })));
+      tr.setAttribute("data-search", ((e.search || "") + " " + e.title + " " +
+        e.venue + " " + e.authors.join(" ") + " " +
+        e.tags.map(function (t) { return t.label; }).join(" ")).toLowerCase());
 
       // Title (+ optional note)
       var tdTitle = el("td", "pub-title");
@@ -183,10 +195,24 @@
       tr.appendChild(el("td", "pub-venue", e.venue || ""));
 
       // Authors (+ equal-contribution note when any author is starred)
-      var tdAuth = el("td", "pub-authors", authorsHTML(e));
+      var tdAuth = el("td", "pub-authors");
+      if (e.abbreviate_authors) {
+        var abbreviated = el("span", "pub-authors-abbreviated");
+        abbreviated.setAttribute("aria-hidden", "true");
+        abbreviated.innerHTML = authorsHTML(e);
+        tdAuth.appendChild(abbreviated);
+        tdAuth.appendChild(el("span", "pub-authors-full",
+          "Full author list (visible list abbreviated): " +
+          e.authors_raw.map(function (a) {
+            return a.first + " " + a.last + (a.equal ? "*" : "");
+          }).join(", ")));
+      } else {
+        tdAuth.innerHTML = authorsHTML(e);
+      }
       if (e.authors.some(function (a) { return a.indexOf("*") !== -1; })) {
-        tdAuth.appendChild(el("div", "pub-equal-note",
-          "<small>(* denotes equal contribution)</small>"));
+        var note = el("div", "pub-equal-note");
+        note.appendChild(el("small", null, "(* denotes equal contribution)"));
+        tdAuth.appendChild(note);
       }
       tr.appendChild(tdAuth);
 
@@ -199,14 +225,7 @@
         e.tags.forEach(function (t) {
           var em = el("span", "pub-topic-emoji", t.emoji);
           em.title = t.label;
-          em.setAttribute("role", "button");
-          em.tabIndex = 0;
-          em.addEventListener("click", function () {
-            toggleTopic(t.id); render(root);
-          });
-          em.addEventListener("keydown", function (ev) {
-            if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); toggleTopic(t.id); render(root); }
-          });
+          em.setAttribute("data-tag", t.id);
           span.appendChild(em);
         });
         tdTags.appendChild(span);
@@ -221,7 +240,23 @@
       tbody.appendChild(tr);
     });
 
-    updateCount(root, rows.length, visible.length);
+    var empty = el("tr", "pub-empty-row");
+    empty.hidden = rows.length > 0;
+    var td = el("td", "pub-empty", "No publications match the current filters.");
+    td.colSpan = 6;
+    empty.appendChild(td);
+    tbody.appendChild(empty);
+    updateCount(root, rows.length, rows.length);
+  }
+
+  function filterRows(root) {
+    var shown = 0;
+    STATE.rows.forEach(function (entry) {
+      entry.row.hidden = !matches(entry);
+      if (!entry.row.hidden) shown++;
+    });
+    root.querySelector(".pub-empty-row").hidden = shown > 0;
+    updateCount(root, shown, STATE.rows.length);
     syncTopics(root);
   }
 
@@ -253,11 +288,6 @@
       return info[a].label.localeCompare(info[b].label);           // then A-Z
     });
 
-    // default: every topic selected (neutral = show all)
-    STATE.allTags = order.slice();
-    STATE.activeTags = {};
-    setAllTopics(true);
-
     // Legend/key above the controls. Clickable (same toggle mechanics as the
     // table emojis); stays in sync via syncTopics on every render.
     var legend = el("div", "pub-legend");
@@ -267,14 +297,7 @@
       var item = el("span", "pub-legend-item",
         t.emoji + " " + t.label + " (" + counts[id] + ")");
       item.setAttribute("data-tag", id);
-      item.setAttribute("role", "button");
-      item.tabIndex = 0;
       item.title = "filter by " + t.label;
-      var toggle = function () { toggleTopic(id); render(root); };
-      item.addEventListener("click", toggle);
-      item.addEventListener("keydown", function (ev) {
-        if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); toggle(); }
-      });
       legend.appendChild(item);
       if (i < order.length - 1) {
         legend.appendChild(document.createTextNode(", "));
@@ -285,20 +308,11 @@
     var search = el("input", "pub-search");
     search.type = "search";
     search.placeholder = "Search titles, authors, venues, topics…";
-    search.addEventListener("input", function () {
-      STATE.query = search.value;
-      render(root);
-    });
+    search.setAttribute("aria-label", "Search publications");
     controls.appendChild(search);
 
     var reset = el("button", "pub-reset", "Clear");
     reset.type = "button";
-    reset.addEventListener("click", function () {
-      STATE.query = "";
-      search.value = "";
-      setAllTopics(true);
-      render(root);
-    });
     controls.appendChild(reset);
     controls.appendChild(el("span", "pub-count"));
 
@@ -307,14 +321,12 @@
     // table
     var table = el("table", "pub-table");
 
-    // Column widths come from STATE.widths (defaults in DEFAULT_WIDTHS).
     // table-layout:fixed in CSS makes these percentages scale with the window.
     var colgroup = el("colgroup");
-    var cols = STATE.widths.map(function (w) {
+    DEFAULT_WIDTHS.forEach(function (w) {
       var col = document.createElement("col");
       col.style.width = w;
       colgroup.appendChild(col);
-      return col;
     });
     table.appendChild(colgroup);
 
@@ -323,33 +335,11 @@
     var labels = ["title", "year", "venue", "authors", "topics", "links"];
     labels.forEach(function (label, idx) {
       var th = el("th", null, label);
+      th.scope = "col";
       // drag handle on the right edge of every column but the last; dragging
       // trades width between this column and the next, keeping the sum at 100%.
       if (idx < labels.length - 1) {
         var handle = el("span", "pub-resizer");
-        handle.addEventListener("mousedown", function (ev) {
-          ev.preventDefault();
-          var tableW = table.getBoundingClientRect().width;
-          var startX = ev.clientX;
-          var leftPct = parseFloat(cols[idx].style.width);
-          var rightPct = parseFloat(cols[idx + 1].style.width);
-          var sum = leftPct + rightPct;
-          document.body.classList.add("pub-resizing");
-          var onMove = function (e) {
-            var dPct = ((e.clientX - startX) / tableW) * 100;
-            var nl = Math.min(Math.max(leftPct + dPct, 3), sum - 3);
-            cols[idx].style.width = nl + "%";
-            cols[idx + 1].style.width = (sum - nl) + "%";
-          };
-          var onUp = function () {
-            document.removeEventListener("mousemove", onMove);
-            document.removeEventListener("mouseup", onUp);
-            document.body.classList.remove("pub-resizing");
-            STATE.widths = cols.map(function (c) { return c.style.width; });
-          };
-          document.addEventListener("mousemove", onMove);
-          document.addEventListener("mouseup", onUp);
-        });
         th.appendChild(handle);
       }
       htr.appendChild(th);
@@ -360,30 +350,83 @@
     root.appendChild(table);
   }
 
-  function init() {
-    var root = document.getElementById("pubs");
-    if (!root) return;
-    var src = root.getAttribute("data-src") || "/assets/publications.json";
-    fetch(src, { cache: "no-cache" })
-      .then(function (r) {
-        if (!r.ok) throw new Error("HTTP " + r.status);
-        return r.json();
-      })
-      .then(function (data) {
-        STATE.entries = data.entries || [];
-        STATE.legend = data.tag_legend || {};
-        buildChrome(root);
-        render(root);
-      })
-      .catch(function (err) {
-        root.innerHTML = '<p class="pub-error">Could not load publications (' +
-          err.message + ').</p>';
+  function bindResizing(root) {
+    var table = root.querySelector(".pub-table");
+    var cols = Array.from(table.querySelectorAll("col"));
+    root.querySelectorAll(".pub-resizer").forEach(function (handle, idx) {
+      handle.addEventListener("mousedown", function (ev) {
+        ev.preventDefault();
+        var tableW = table.getBoundingClientRect().width;
+        var startX = ev.clientX;
+        var leftPct = parseFloat(cols[idx].style.width);
+        var rightPct = parseFloat(cols[idx + 1].style.width);
+        var sum = leftPct + rightPct;
+        document.body.classList.add("pub-resizing");
+        var onMove = function (e) {
+          var dPct = ((e.clientX - startX) / tableW) * 100;
+          var nl = Math.min(Math.max(leftPct + dPct, 3), sum - 3);
+          cols[idx].style.width = nl + "%";
+          cols[idx + 1].style.width = (sum - nl) + "%";
+        };
+        var onUp = function () {
+          document.removeEventListener("mousemove", onMove);
+          document.removeEventListener("mouseup", onUp);
+          document.body.classList.remove("pub-resizing");
+        };
+        document.addEventListener("mousemove", onMove);
+        document.addEventListener("mouseup", onUp);
       });
+    });
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
+  function build(root, data) {
+    STATE.entries = data.entries;
+    root.replaceChildren();
+    buildChrome(root);
+    buildRows(root);
   }
-})();
+
+  function enhance(root) {
+    if (root.classList.contains("pub-enhanced")) return;
+    if (!root.querySelector(".pub-table")) throw new Error("Missing pre-rendered table");
+    STATE.rows = Array.from(root.querySelectorAll(".pub-row")).map(function (row) {
+      return { row: row, tags: JSON.parse(row.getAttribute("data-tags")),
+        search: row.getAttribute("data-search") };
+    });
+    STATE.allTags = Array.from(root.querySelectorAll(".pub-legend-item")).map(function (item) {
+      return item.getAttribute("data-tag");
+    });
+    STATE.query = "";
+    STATE.activeTags = {};
+    setAllTopics(true);
+
+    root.querySelectorAll("[data-tag]").forEach(function (item) {
+      item.setAttribute("role", "button");
+      item.tabIndex = 0;
+      var toggle = function () {
+        toggleTopic(item.getAttribute("data-tag"));
+        filterRows(root);
+      };
+      item.addEventListener("click", toggle);
+      item.addEventListener("keydown", function (ev) {
+        if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); toggle(); }
+      });
+    });
+    var search = root.querySelector(".pub-search");
+    search.value = "";
+    search.addEventListener("input", function () {
+      STATE.query = search.value;
+      filterRows(root);
+    });
+    root.querySelector(".pub-reset").addEventListener("click", function () {
+      STATE.query = "";
+      search.value = "";
+      setAllTopics(true);
+      filterRows(root);
+    });
+    bindResizing(root);
+    root.classList.add("pub-enhanced");
+  }
+
+  return { build: build, enhance: enhance };
+});

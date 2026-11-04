@@ -18,10 +18,10 @@ author_profile: true
   Publications are generated, not hand-written. Source of truth:
     _pubs/publications.bib   (canonical entries; parsed exactly as-is)
     _pubs/meta.yml           (venue aliases, topical tags, extra links)
-  Rebuild after editing either:  cd _pubs && uv run build_pubs.py
-  That regenerates assets/publications.json, which this widget renders.
+  Rebuild after editing either: cd _pubs && uv run --locked build_pubs.py && npm run build
+  The shared JavaScript renderer generates the HTML included below.
 -->
 
-<div id="pubs" data-src="{{ '/assets/publications.json' | relative_url }}"></div>
+<div id="pubs">{% include publications.generated.html %}</div>
 
 <script src="{{ '/assets/js/publications.js' | relative_url }}"></script>

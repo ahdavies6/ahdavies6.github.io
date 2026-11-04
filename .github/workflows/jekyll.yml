@@ -42,11 +42,33 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Setup publication build tools
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: _pubs/package-lock.json
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+      - name: Build publications
+        working-directory: _pubs
+        run: |
+          uv run --locked build_pubs.py
+          npm ci
+          npm run build
+          npm test
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Test publications in Chromium
+        working-directory: _pubs
+        run: |
+          npx playwright install --with-deps --only-shell chromium
+          npm run test:browser
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3

@@ -1,12 +1,14 @@
+# Shared build artifacts
 _site
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
 .DS_Store
-
-# publications build env (uv) — keep pyproject.toml + uv.lock, ignore the venv
-_pubs/.venv/
-_pubs/__pycache__/
 __pycache__/
 .python-version
 vendor
+
+# Publications build environments; keep dependency manifests and lockfiles
+_pubs/.venv/
+_pubs/__pycache__/
+_pubs/node_modules/

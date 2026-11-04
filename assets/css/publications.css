@@ -13,6 +13,27 @@
   color: inherit;
 }
 
+#pubs [hidden],
+#pubs:not(.pub-enhanced) .pub-search,
+#pubs:not(.pub-enhanced) .pub-reset,
+#pubs:not(.pub-enhanced) .pub-resizer {
+  display: none !important;
+}
+
+#pubs:not(.pub-enhanced) [data-tag] { cursor: default; }
+
+#pubs .pub-authors-full {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ---- controls ---- */
 #pubs .pub-controls {
   display: flex;
