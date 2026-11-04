@@ -5,6 +5,10 @@
       "emoji": "🗣️",
       "label": "LLMs/NLP"
     },
+    "agents": {
+      "emoji": "🤖",
+      "label": "agents"
+    },
     "mechinterp": {
       "emoji": "🔎",
       "label": "(mechanistic) interpretability"
@@ -55,6 +59,442 @@
     }
   },
   "entries": [
+    {
+      "key": "bagdasarian2026open",
+      "title": "Open and Emergent Problems in Agentic Privacy and Security: A Contextual Angle",
+      "authors": [
+        "Bagdasarian",
+        "Tsai",
+        "Abdelnabi",
+        "Balashankar",
+        "de Balle Pigem",
+        "Benthall",
+        "Bilogrevic",
+        "Birrell",
+        "Bursztein",
+        "Chaudhuri",
+        "Choksi",
+        "Christodorescu",
+        "Cummings",
+        "Davies",
+        "Dvijotham",
+        "El-Sayed",
+        "Fioretto",
+        "Franchi",
+        "Freudiger",
+        "Gascon",
+        "Geambasu",
+        "Ghalebikesabi",
+        "Haddadi",
+        "Hayes",
+        "Hooda",
+        "Houmansadr",
+        "Jha",
+        "Kairouz",
+        "Kiddon",
+        "Kohno",
+        "Köksal",
+        "Lentz",
+        "Li",
+        "Li",
+        "Malkin",
+        "Meiklejohn",
+        "Mireshghallah",
+        "Oh",
+        "Ortiz",
+        "Petrov",
+        "Pinto",
+        "Ramage",
+        "Raykova",
+        "Roesner",
+        "Roth",
+        "Rowe",
+        "Shams",
+        "Shokri",
+        "Shumailov",
+        "Shvartzshnaider",
+        "Song",
+        "Such",
+        "Suciu",
+        "Tholoniat",
+        "Tierney",
+        "Tiwari",
+        "Triedman",
+        "Yi",
+        "Zhang",
+        "Zhou",
+        "Fawaz",
+        "Mellem",
+        "Nissenbaum",
+        "Taft",
+        "de Haas",
+        "Gruteser"
+      ],
+      "authors_raw": [
+        {
+          "last": "Bagdasarian",
+          "first": "Eugene",
+          "equal": false
+        },
+        {
+          "last": "Tsai",
+          "first": "Lillian",
+          "equal": false
+        },
+        {
+          "last": "Abdelnabi",
+          "first": "Sahar",
+          "equal": false
+        },
+        {
+          "last": "Balashankar",
+          "first": "Ananth",
+          "equal": false
+        },
+        {
+          "last": "de Balle Pigem",
+          "first": "Borja",
+          "equal": false
+        },
+        {
+          "last": "Benthall",
+          "first": "Sebastian",
+          "equal": false
+        },
+        {
+          "last": "Bilogrevic",
+          "first": "Igor",
+          "equal": false
+        },
+        {
+          "last": "Birrell",
+          "first": "Eleanor",
+          "equal": false
+        },
+        {
+          "last": "Bursztein",
+          "first": "Elie",
+          "equal": false
+        },
+        {
+          "last": "Chaudhuri",
+          "first": "Kamalika",
+          "equal": false
+        },
+        {
+          "last": "Choksi",
+          "first": "Madiha Zahrah",
+          "equal": false
+        },
+        {
+          "last": "Christodorescu",
+          "first": "Mihai",
+          "equal": false
+        },
+        {
+          "last": "Cummings",
+          "first": "Rachel",
+          "equal": false
+        },
+        {
+          "last": "Davies",
+          "first": "Adam",
+          "equal": false
+        },
+        {
+          "last": "Dvijotham",
+          "first": "Dj",
+          "equal": false
+        },
+        {
+          "last": "El-Sayed",
+          "first": "Seliem",
+          "equal": false
+        },
+        {
+          "last": "Fioretto",
+          "first": "Ferdinando",
+          "equal": false
+        },
+        {
+          "last": "Franchi",
+          "first": "Matt",
+          "equal": false
+        },
+        {
+          "last": "Freudiger",
+          "first": "Julien",
+          "equal": false
+        },
+        {
+          "last": "Gascon",
+          "first": "Adria",
+          "equal": false
+        },
+        {
+          "last": "Geambasu",
+          "first": "Roxana",
+          "equal": false
+        },
+        {
+          "last": "Ghalebikesabi",
+          "first": "Sahra",
+          "equal": false
+        },
+        {
+          "last": "Haddadi",
+          "first": "Hamed",
+          "equal": false
+        },
+        {
+          "last": "Hayes",
+          "first": "Jamie",
+          "equal": false
+        },
+        {
+          "last": "Hooda",
+          "first": "Ashish",
+          "equal": false
+        },
+        {
+          "last": "Houmansadr",
+          "first": "Amir",
+          "equal": false
+        },
+        {
+          "last": "Jha",
+          "first": "Somesh",
+          "equal": false
+        },
+        {
+          "last": "Kairouz",
+          "first": "Peter",
+          "equal": false
+        },
+        {
+          "last": "Kiddon",
+          "first": "Chloé",
+          "equal": false
+        },
+        {
+          "last": "Kohno",
+          "first": "Tadayoshi",
+          "equal": false
+        },
+        {
+          "last": "Köksal",
+          "first": "Abdullatif",
+          "equal": false
+        },
+        {
+          "last": "Lentz",
+          "first": "Alison",
+          "equal": false
+        },
+        {
+          "last": "Li",
+          "first": "Haoran",
+          "equal": false
+        },
+        {
+          "last": "Li",
+          "first": "Tianshi",
+          "equal": false
+        },
+        {
+          "last": "Malkin",
+          "first": "Nathan",
+          "equal": false
+        },
+        {
+          "last": "Meiklejohn",
+          "first": "Sarah",
+          "equal": false
+        },
+        {
+          "last": "Mireshghallah",
+          "first": "Niloofar",
+          "equal": false
+        },
+        {
+          "last": "Oh",
+          "first": "Sewoong",
+          "equal": false
+        },
+        {
+          "last": "Ortiz",
+          "first": "Katherine",
+          "equal": false
+        },
+        {
+          "last": "Petrov",
+          "first": "Ivan",
+          "equal": false
+        },
+        {
+          "last": "Pinto",
+          "first": "Francesco",
+          "equal": false
+        },
+        {
+          "last": "Ramage",
+          "first": "Daniel",
+          "equal": false
+        },
+        {
+          "last": "Raykova",
+          "first": "Mariana",
+          "equal": false
+        },
+        {
+          "last": "Roesner",
+          "first": "Franziska",
+          "equal": false
+        },
+        {
+          "last": "Roth",
+          "first": "Edo",
+          "equal": false
+        },
+        {
+          "last": "Rowe",
+          "first": "Jacqueline",
+          "equal": false
+        },
+        {
+          "last": "Shams",
+          "first": "Khawaja",
+          "equal": false
+        },
+        {
+          "last": "Shokri",
+          "first": "Reza",
+          "equal": false
+        },
+        {
+          "last": "Shumailov",
+          "first": "Ilia",
+          "equal": false
+        },
+        {
+          "last": "Shvartzshnaider",
+          "first": "Yan",
+          "equal": false
+        },
+        {
+          "last": "Song",
+          "first": "Dawn",
+          "equal": false
+        },
+        {
+          "last": "Such",
+          "first": "Jose",
+          "equal": false
+        },
+        {
+          "last": "Suciu",
+          "first": "Octavian",
+          "equal": false
+        },
+        {
+          "last": "Tholoniat",
+          "first": "Pierre",
+          "equal": false
+        },
+        {
+          "last": "Tierney",
+          "first": "Matt",
+          "equal": false
+        },
+        {
+          "last": "Tiwari",
+          "first": "Trishita",
+          "equal": false
+        },
+        {
+          "last": "Triedman",
+          "first": "Hal",
+          "equal": false
+        },
+        {
+          "last": "Yi",
+          "first": "Ren",
+          "equal": false
+        },
+        {
+          "last": "Zhang",
+          "first": "Wen",
+          "equal": false
+        },
+        {
+          "last": "Zhou",
+          "first": "Xuhui",
+          "equal": false
+        },
+        {
+          "last": "Fawaz",
+          "first": "Kassem",
+          "equal": false
+        },
+        {
+          "last": "Mellem",
+          "first": "Stefan",
+          "equal": false
+        },
+        {
+          "last": "Nissenbaum",
+          "first": "Helen",
+          "equal": false
+        },
+        {
+          "last": "Taft",
+          "first": "Nina",
+          "equal": false
+        },
+        {
+          "last": "de Haas",
+          "first": "Sarah",
+          "equal": false
+        },
+        {
+          "last": "Gruteser",
+          "first": "Marco",
+          "equal": false
+        }
+      ],
+      "year": 2026,
+      "month": 10,
+      "is_workshop": false,
+      "venue": "Google",
+      "venue_raw": "Google",
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://research.google/pubs/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/"
+        },
+        {
+          "type": "blog",
+          "url": "https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/"
+        }
+      ],
+      "tags": [
+        {
+          "id": "all",
+          "emoji": "🗣️",
+          "label": "LLMs/NLP"
+        },
+        {
+          "id": "agents",
+          "emoji": "🤖",
+          "label": "agents"
+        }
+      ],
+      "notes": "",
+      "section": "preprint",
+      "type": "techreport",
+      "search": "https://research.google/pubs/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/ oct 2026 google bagdasarian, eugene and tsai, lillian and abdelnabi, sahar and balashankar, ananth and de balle pigem, borja and benthall, sebastian and bilogrevic, igor and birrell, eleanor and bursztein, elie and chaudhuri, kamalika and choksi, madiha zahrah and christodorescu, mihai and cummings, rachel and davies, adam and dvijotham, dj and el-sayed, seliem and fioretto, ferdinando and franchi, matt and freudiger, julien and gascon, adria and geambasu, roxana and ghalebikesabi, sahra and haddadi, hamed and hayes, jamie and hooda, ashish and houmansadr, amir and jha, somesh and kairouz, peter and kiddon, chloé and kohno, tadayoshi and köksal, abdullatif and lentz, alison and li, haoran and li, tianshi and malkin, nathan and meiklejohn, sarah and mireshghallah, niloofar and oh, sewoong and ortiz, katherine and petrov, ivan and pinto, francesco and ramage, daniel and raykova, mariana and roesner, franziska and roth, edo and rowe, jacqueline and shams, khawaja and shokri, reza and shumailov, ilia and shvartzshnaider, yan and song, dawn and such, jose and suciu, octavian and tholoniat, pierre and tierney, matt and tiwari, trishita and triedman, hal and yi, ren and zhang, wen and zhou, xuhui and fawaz, kassem and mellem, stefan and nissenbaum, helen and taft, nina and de haas, sarah and gruteser, marco open and emergent problems in agentic privacy and security: a contextual angle google llms/nlp 🗣️ agents 🤖",
+      "abbreviate_authors": true
+    },
     {
       "key": "davies2026interpreting",
       "title": "Interpreting, Evaluating, and Controlling Features Learned and Leveraged by Foundation Models",
@@ -420,6 +860,11 @@
           "label": "LLMs/NLP"
         },
         {
+          "id": "agents",
+          "emoji": "🤖",
+          "label": "agents"
+        },
+        {
           "id": "sim",
           "emoji": "🎭",
           "label": "simulation"
@@ -438,7 +883,7 @@
       "notes": "",
       "section": "shown",
       "type": "inproceedings",
-      "search": "https://openreview.net/forum?id=1bdrpz3hck oct 2025 first workshop on social simulation with llms amogh mannekote and adam davies and guohao li and kristy elizabeth boyer and chengxiang zhai and bonnie j dorr and francesco pinto do role-playing agents practice what they preach? belief-behavior alignment in {llm}-based simulations of human trust socialsim @ colm 2025 llms/nlp 🗣️ simulation 🎭 social science 🌐 evaluation + benchmarking 📏"
+      "search": "https://openreview.net/forum?id=1bdrpz3hck oct 2025 first workshop on social simulation with llms amogh mannekote and adam davies and guohao li and kristy elizabeth boyer and chengxiang zhai and bonnie j dorr and francesco pinto do role-playing agents practice what they preach? belief-behavior alignment in {llm}-based simulations of human trust socialsim @ colm 2025 llms/nlp 🗣️ agents 🤖 simulation 🎭 social science 🌐 evaluation + benchmarking 📏"
     },
     {
       "key": "lamb2025focus",
@@ -648,6 +1093,11 @@
           "label": "LLMs/NLP"
         },
         {
+          "id": "agents",
+          "emoji": "🤖",
+          "label": "agents"
+        },
+        {
           "id": "sim",
           "emoji": "🎭",
           "label": "simulation"
@@ -666,7 +1116,7 @@
       "notes": "",
       "section": "shown",
       "type": "inproceedings",
-      "search": "https://eaai-conf.github.io/year/eaai-25.html mar 2025 proceedings of the aaai conference on artificial intelligence mannekote, amogh and davies, adam and kang, jina and boyer, kristy elizabeth can {llms} reliably simulate human learner actions? {a} simulation authoring framework for open-ended learning environments aaai llms/nlp 🗣️ simulation 🎭 ai for education 🎓 evaluation + benchmarking 📏"
+      "search": "https://eaai-conf.github.io/year/eaai-25.html mar 2025 proceedings of the aaai conference on artificial intelligence mannekote, amogh and davies, adam and kang, jina and boyer, kristy elizabeth can {llms} reliably simulate human learner actions? {a} simulation authoring framework for open-ended learning environments aaai llms/nlp 🗣️ agents 🤖 simulation 🎭 ai for education 🎓 evaluation + benchmarking 📏"
     },
     {
       "key": "hemmat2024illusionbench",

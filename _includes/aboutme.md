@@ -11,7 +11,7 @@
   }
 </style>
 
-Hi there! 👋 I'm Adam, an AI researcher at Microsoft's [IDEAS Research team](https://www.microsoft.com/en-us/research/group/ideas-research/). I recently (in May 2026) graduated from [UIUC](https://illinois.edu/) with my [PhD in CS](https://siebelschool.illinois.edu/).
+Hi there! 👋 I'm Adam, an AI researcher at Microsoft's [IDEAS Research team](https://www.microsoft.com/en-us/research/group/ideas-research/) in NYC. I recently (in May 2026) graduated from [UIUC](https://illinois.edu/) with my [PhD in CS](https://siebelschool.illinois.edu/).
 
 My research vision is to help build the foundations of a **<a href="{% link assets/docs/dissertation.pdf %}#page=13" target="_blank" rel="noopener">cognitive science of AI</a>**, studying how foundation models like LLMs learn, represent, and process information. 
 <!-- My work working at the intersection of NLP, (mechanistic) interpretability, and cognitive science, to understand internal representations and processes that drive AI behaviors.  -->
@@ -30,4 +30,4 @@ I'm always open to **collaborate** on relevant topics, **mentor** highly motivat
 If you're here for any of those reasons, please feel free to reach out to me via email or LinkedIn!
 
 
-[^1]: I live in Seattle :)
+[^1]: I live in NYC :)

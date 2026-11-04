@@ -147,7 +147,7 @@ def main() -> None:
             search_parts.append(t["emoji"])
         search_blob = clean(" ".join(search_parts)).lower()
 
-        entries.append({
+        entry = {
             "key": key,
             "title": clean(e.get("title", "")).replace("{", "").replace("}", ""),
             "authors": [fmt_author(a) for a in authors],
@@ -163,7 +163,12 @@ def main() -> None:
             "section": section,
             "type": e.get("ENTRYTYPE", ""),
             "search": search_blob,
-        })
+        }
+        if "abbreviate_authors" in pm:
+            if not isinstance(pm["abbreviate_authors"], bool):
+                raise ValueError(f"{key}: abbreviate_authors must be a boolean")
+            entry["abbreviate_authors"] = pm["abbreviate_authors"]
+        entries.append(entry)
 
     # newest first: year, then month, then conferences before workshops, then
     # title -- months + workshop-rank let same-year papers order correctly.

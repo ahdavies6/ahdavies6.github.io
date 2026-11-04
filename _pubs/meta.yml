@@ -21,6 +21,7 @@
 # ---------------------------------------------------------------------------
 tag_legend:
   all:          { emoji: "🗣️", label: "LLMs/NLP" }
+  agents:       { emoji: "🤖", label: "agents" }
   mechinterp:   { emoji: "🔎", label: "(mechanistic) interpretability" }
   causal:       { emoji: "🔨", label: "causality" }
   ood:          { emoji: "🗺️", label: "out-of-distribution" }
@@ -91,7 +92,7 @@ papers:
     tags: [all, mechinterp, theory, eval]
 
   mannekote2025role:
-    tags: [all, sim, socsci, eval]
+    tags: [all, agents, sim, socsci, eval]
 
   lamb2025focus:
     tags: [all, causal, ood]
@@ -107,7 +108,7 @@ papers:
       - { type: poster, url: "assets/docs/ICLR25/AISS_ICLR_HAIC_poster_2025.pdf" }
 
   mannekote2025simlearners:
-    tags: [all, sim, edu, eval]
+    tags: [all, agents, sim, edu, eval]
     links:
       - { type: code, url: "https://github.com/msamogh/hypmix" }
 
@@ -145,6 +146,13 @@ papers:
       - { type: video,  url: "https://player.vimeo.com/video/724457511?app_id=122963&h=015bc4614c&referrer=https%3A%2F%2Fpasc22.e-event.ch%2F#t=33m15s" }
 
   # ---- preprints ----
+  bagdasarian2026open:
+    section: preprint
+    tags: [all, agents]
+    abbreviate_authors: true
+    links:
+      - { type: blog, url: "https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/" }
+
   davies2024cognitive:
     tags: [all, cogsci, mechinterp]
 

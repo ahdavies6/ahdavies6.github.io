@@ -13,6 +13,9 @@ The **publications page** (`/publications`) is generated, not hand-edited.
   - `papers.<citekey>.links`: EXTRA links (poster/slides/code/webpage/video/…)
   - `papers.<citekey>.notes`: optional note under an entry
   - `papers.<citekey>.section`: `published` (default) | `preprint` | `hidden`
+  - `papers.<citekey>.abbreviate_authors`: optional boolean; the table keeps the
+    first two authors, Adam Davies, and the final author, with `...` for omitted
+    runs. Full authors remain in BibTeX, generated data, and text search.
 
 `meta.yml` never overrides the bib. Equal contribution comes from `{*}` in the bib.
 

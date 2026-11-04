@@ -50,12 +50,19 @@
   }
 
   function authorsHTML(entry) {
-    return entry.authors_raw.map(function (a, i) {
+    var labels = [];
+    var previous = -1;
+    entry.authors_raw.forEach(function (a, i) {
+      if (entry.abbreviate_authors && i > 1 &&
+          i < entry.authors_raw.length - 1 && !YOU_ARE(a)) return;
+      if (i > previous + 1) labels.push("...");
       var label = entry.authors[i];
-      return YOU_ARE(a)
+      labels.push(YOU_ARE(a)
         ? '<strong>' + label + '</strong>'
-        : label;
-    }).join(", ");
+        : label);
+      previous = i;
+    });
+    return labels.join(", ");
   }
 
   // ---- global state ----
