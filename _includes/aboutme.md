@@ -11,7 +11,7 @@
   }
 </style>
 
-Hi there! 👋 I'm Adam, an AI researcher at Microsoft's [IDEAS Research team](https://www.microsoft.com/en-us/research/group/ideas-research/) in NYC. I recently (in May 2026) graduated from [UIUC](https://illinois.edu/) with my [PhD in CS](https://siebelschool.illinois.edu/).
+Hi there! 👋 I'm Adam, an AI researcher at Microsoft's [IDEAS Research team](https://www.microsoft.com/en-us/research/group/ideas-research/) in NYC. I recently (in May 2026) graduated from [UIUC](https://illinois.edu/) with my [PhD in CS](https://siebelschool.illinois.edu/), co-advised by [Julia Hockenmaier](https://hmr-lab.github.io/) and [ChengXiang Zhai](https://czhai.cs.illinois.edu/).
 
 My research vision is to help build the foundations of a **<a href="{% link assets/docs/dissertation.pdf %}#page=13" target="_blank" rel="noopener">cognitive science of AI</a>**, studying how foundation models like LLMs learn, represent, and process information. 
 <!-- My work working at the intersection of NLP, (mechanistic) interpretability, and cognitive science, to understand internal representations and processes that drive AI behaviors.  -->
@@ -21,7 +21,7 @@ leverages insights from cognitive science to develop new approaches to mechanist
 <!-- [*how machines think*](https://academic.oup.com/mind/article/LIX/236/433/986238). -->
 <!-- My current research intersects primarily with *NLP, (mechanistic) interpretability, cognitive science, OOD generalization, and causal machine learning;* but I also have ongoing collaborations in the areas of *synthetic data, multimodal representation learning, computational social science, and AI for education.* -->
 
-My current research agenda is centered around **bidirectional [theory of mind](https://en.wikipedia.org/wiki/Theory_of_mind)** between AI agents and human users -- that is:
+My current research agenda is centered around **bidirectional theory of mind** between AI agents and human users -- that is:
 - *How do AI systems internally represent and reason over the mental states of human users?* For instance: when, how, why do they (mis)understand our goals, intentions, or preferences? How can we proactively surface and correct such misunderstandings to promote more productive and safe interactions with AI?
 - *How can we, as human researchers (or everyday users), better understand why AI systems behave the way they do?* What do they (mis)understand about us, our values (individually and societally), and the world? When can(\'t) we trust them to act autonomously on our behalf?
 
